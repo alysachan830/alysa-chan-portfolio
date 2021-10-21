@@ -104,11 +104,45 @@
         <p class="font-xs text-white">2021 © Alysa Chan</p>
       </nav>
     </footer>
+    <transition name="fade">
+      <button
+        v-show="toggleScroll"
+        class="scroll-to-top-btn position-fixed btn"
+        @click="scrollToTop"
+      >
+        <span class="text-info material-icons"> arrow_upward </span>
+      </button>
+    </transition>
   </div>
 </template>
 
 <script>
-export default {}
+import debounce from 'lodash/debounce'
+
+export default {
+  data() {
+    return {
+      toggleScroll: false,
+    }
+  },
+  mounted() {
+    const handleScroll = debounce(this.checkScrollPosition, 1000)
+    window.addEventListener('scroll', handleScroll)
+  },
+  methods: {
+    checkScrollPosition() {
+      if (window.scrollY > 700) {
+        this.toggleScroll = true
+      } else {
+        this.toggleScroll = false
+      }
+    },
+    scrollToTop() {
+      document.body.scrollTop = 0 // For Safari
+      document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
+    },
+  },
+}
 </script>
 
 <style lang="scss">
@@ -127,5 +161,25 @@ nav {
 
 .social-media-icon {
   width: 28px;
+}
+
+.scroll-to-top-btn {
+  transition: all 0.3s;
+  bottom: 50px;
+  right: 50px;
+  background: #ededed;
+
+  &:hover {
+    box-shadow: 2px 4px 10px #f4f4f4;
+    transform: translateY(-4px);
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 </style>
