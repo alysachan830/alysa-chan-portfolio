@@ -26,7 +26,7 @@
               <a href="#">
                 <img
                   class="social-media-icon"
-                  src="@/assets/images/5282542_linkedin_network_social network_linkedin logo_icon.svg"
+                  src="images/5282542_linkedin_network_social network_linkedin logo_icon.svg"
                   alt=""
                 />
               </a>
@@ -35,7 +35,7 @@
               <a href="#">
                 <img
                   class="social-media-icon"
-                  src="@/assets/images/317712_code repository_github_repository_resource_icon.svg"
+                  src="images/317712_code repository_github_repository_resource_icon.svg"
                   alt=""
                 />
               </a>
@@ -69,15 +69,15 @@
               <a v-if="work.sourceCode" :href="work.sourceCode">
                 <img
                   class="social-media-icon"
-                  src="@/assets/images/317712_code repository_github_repository_resource_icon.svg"
-                  alt=""
+                  src="images/317712_code repository_github_repository_resource_icon.svg"
+                  alt="github"
                 />
               </a>
             </a>
           </li>
         </ul>
       </section>
-      <section class="mb-21 info-bg">
+      <section class="info-bg">
         <div class="container py-20">
           <h2 class="fw-bold font-2xl mb-20 text-uppercase">Articles</h2>
           <ul>

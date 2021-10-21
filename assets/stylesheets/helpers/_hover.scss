@@ -7,3 +7,13 @@
     }
   }
 }
+
+.hover--secondary {
+  &:hover {
+    color: $secondary;
+  }
+}
+
+.hover--underline {
+    
+}
