@@ -1,6 +1,14 @@
 <template>
   <div>
-    <nav class="d-flex justify-content-between my-10 container">
+    <nav
+      class="
+        top-nav
+        d-flex
+        justify-content-between
+        align-items-center
+        container
+      "
+    >
       <h1 class="font-l">
         <NuxtLink to="/">Alysa Chan</NuxtLink>
       </h1>
@@ -146,7 +154,8 @@ export default {
 </script>
 
 <style lang="scss">
-nav {
+.top-nav {
+  height: 64px;
   z-index: 10;
 }
 

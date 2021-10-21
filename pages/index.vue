@@ -1,12 +1,11 @@
 <template>
   <div>
-    <div class="position-relative vh-100 vw-100 mb-21">
+    <div class="banner-bg-wrap position-relative vw-100 mb-20">
       <div
         class="
           banner-bg
           position-absolute
           vw-100
-          vh-100
           d-flex
           justify-content-center
           align-items-center
@@ -21,7 +20,7 @@
           <h3 class="text-info font-l mb-16">
             A front-end developer with design sense.
           </h3>
-          <ul class="d-flex justify-content-center mb-20">
+          <ul class="d-flex justify-content-center mb-18">
             <li class="me-10">
               <a href="#">
                 <img
@@ -41,12 +40,16 @@
               </a>
             </li>
           </ul>
-          <a href="#works" class="btn px-14 btn-primary btn-lg">All works</a>
+          <a
+            href="#works"
+            class="px-14 py-4 btn btn-primary btn-lg text-uppercase"
+            >All works</a
+          >
         </div>
       </div>
     </div>
     <div>
-      <section class="mb-21 container">
+      <section class="mb-20 container">
         <h2 id="works" class="fw-bold font-2xl mb-20 text-uppercase">Works</h2>
         <ul>
           <li
@@ -187,12 +190,17 @@ export default {
 }
 
 .banner-bg {
+  &-wrap {
+    height: 50vh;
+  }
+
   background: linear-gradient(#ffffff, #f0f1ff, #c9cdff);
   top: 0;
   left: 0;
+  height: calc(50vh - 64px);
 
   &__title {
-    font-size: 92px;
+    font-size: 84px;
     letter-spacing: 4px;
   }
 }
