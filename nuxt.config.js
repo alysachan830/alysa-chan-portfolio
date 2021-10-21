@@ -28,6 +28,10 @@ export default {
         href: 'https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap',
         rel: 'stylesheet',
       },
+      {
+        href: 'https://fonts.googleapis.com/icon?family=Material+Icons',
+        rel: 'stylesheet',
+      },
     ],
   },
 

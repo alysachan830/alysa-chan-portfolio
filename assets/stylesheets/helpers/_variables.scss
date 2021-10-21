@@ -423,7 +423,9 @@ $spacers: (
   // 64px
   19: ($spacer * 4.5),
   // 72px
-  20: ($spacer * 5.75) // 92px
+  20: ($spacer * 5.75),
+  // 92px
+  21: ($spacer * 12) // 192px
 ) !default;
 
 $negative-spacers: if(

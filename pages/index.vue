@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="position-relative vh-100 vw-100 mb-20">
+    <div class="position-relative vh-100 vw-100 mb-21">
       <div
         class="
           banner-bg
@@ -18,7 +18,9 @@
             &lt; <span class="align-middle">/</span> &gt;
           </p>
           <h2 class="text-uppercase fw-bold banner-bg__title">alysa chan</h2>
-          <h3 class="text-info mb-16">Front-end developer</h3>
+          <h3 class="text-info font-l mb-16">
+            A front-end developer with design sense.
+          </h3>
           <ul class="d-flex justify-content-center mb-20">
             <li class="me-10">
               <a href="#">
@@ -43,36 +45,80 @@
         </div>
       </div>
     </div>
-    <div class="container">
-      <h2 id="works" class="fw-bold font-2xl mb-20">Works</h2>
-      <ul>
-        <li
-          v-for="work in works"
-          :key="work.title"
-          class="row justify-content-between mb-20"
-        >
-          <a href="#" class="col-md-7 mb-5 mb-md-0">
-            <div class="img--hover--zoom">
-              <img :src="work.img" alt="" />
-            </div>
-          </a>
-          <a href="#" class="col-md-4">
-            <h2 class="mb-5">{{ work.title }}</h2>
-            <ul class="d-flex text-info mb-12">
-              <li v-for="skill in work.skills" :key="skill" class="me-5">
-                {{ skill }}
-              </li>
-            </ul>
-            <a v-if="work.sourceCode" :href="work.sourceCode">
-              <img
-                class="social-media-icon"
-                src="@/assets/images/317712_code repository_github_repository_resource_icon.svg"
-                alt=""
-              />
+    <div>
+      <section class="mb-21 container">
+        <h2 id="works" class="fw-bold font-2xl mb-20 text-uppercase">Works</h2>
+        <ul>
+          <li
+            v-for="work in works"
+            :key="work.title"
+            class="row justify-content-between mb-20"
+          >
+            <a href="#" class="col-md-7 mb-5 mb-md-0">
+              <div class="img--hover--zoom">
+                <img :src="work.img" alt="" />
+              </div>
             </a>
-          </a>
-        </li>
-      </ul>
+            <a href="#" class="col-md-4">
+              <h2 class="mb-5">{{ work.title }}</h2>
+              <ul class="d-flex text-info mb-12">
+                <li v-for="skill in work.skills" :key="skill" class="me-5">
+                  {{ skill }}
+                </li>
+              </ul>
+              <a v-if="work.sourceCode" :href="work.sourceCode">
+                <img
+                  class="social-media-icon"
+                  src="@/assets/images/317712_code repository_github_repository_resource_icon.svg"
+                  alt=""
+                />
+              </a>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="mb-21 info-bg">
+        <div class="container py-20">
+          <h2 class="fw-bold font-2xl mb-20 text-uppercase">Articles</h2>
+          <ul>
+            <li
+              v-for="article in articles"
+              :key="article.title"
+              class="article-card"
+            >
+              <a href="#" class="row justify-content-center py-18">
+                <div class="col-5">
+                  <a href="#" class="mb-10">
+                    <img class="article-icon" :src="article.img" alt="" />
+                  </a>
+                  <div>
+                    <p class="mb-2 text-info fw-bold">
+                      {{ article.subTitle }}
+                    </p>
+                    <h3 class="mb-10 fw-bold">{{ article.title }}</h3>
+                    <p>{{ article.post }} articles</p>
+                  </div>
+                </div>
+                <div class="col-5">
+                  <p v-if="article.prize" class="text-primary font-s mb-6">
+                    <span class="material-icons align-top"> emoji_events </span>
+                    {{ article.prize }}
+                  </p>
+                  <p class="mb-16">
+                    {{ article.description }}
+                  </p>
+                  <span class="text-primary text-end d-block article-card-link"
+                    >Read more
+                    <span class="material-icons align-middle">
+                      chevron_right
+                    </span>
+                  </span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </div>
   </div>
 </template>
@@ -99,6 +145,25 @@ export default {
           skills: ['UI/UX design'],
         },
       ],
+      articles: [
+        {
+          img: 'images/282802_javascript_js_icon.svg',
+          title: 'JavaScript 基本功修煉',
+          subTitle: '12th iThome Ironman 第 12 屆 IT 邦鐵人賽',
+          prize: `Judge's selection 評選佳作`,
+          post: 31,
+          description: `iThome Ironman is a competition of writing technical articles for 30 days. In September 2020 , I joined the competition which had around 500 participants and shared my knowledge about JavaScript for 30 days.  My series of articles was selected as one of the Judge's Selections (評選佳作) at the end of the competition.`,
+          url: 'https://ithelp.ithome.com.tw/users/20128534/ironman/3460',
+        },
+        {
+          img: 'images/4691448_dot_js_vue_icon.svg',
+          title: '不只懂 Vue 語法：Vue.js 觀念篇',
+          subTitle: '13th iThome Ironman 第 13 屆 IT 邦鐵人賽',
+          post: 31,
+          description: `I participated in 13th iThome Ironman competition again in September 2021, for writing technical articles about the concepts of Vue.js for 30 days. To strengthen my skills with Vue.js, I tried to have an in-depth study in the syntax and core concepts in Vue.js through sharing my articles online.`,
+          url: 'https://ithelp.ithome.com.tw/users/20128534/ironman/4377',
+        },
+      ],
     }
   },
 }
@@ -114,7 +179,7 @@ export default {
 }
 
 .banner-bg {
-  background: linear-gradient(#ffffff, #c9cdff);
+  background: linear-gradient(#ffffff, #f0f1ff, #c9cdff);
   top: 0;
   left: 0;
 
@@ -124,8 +189,32 @@ export default {
   }
 }
 
+.info-bg {
+  background: #fcfcfc;
+}
+
 .social-media-icon {
   width: 30px;
   height: 30px;
+}
+
+.article-icon {
+  width: 100px;
+  height: 100px;
+}
+
+.article-card {
+  transition: box-shadow 0.2s;
+  &:hover {
+    box-shadow: 2px 4px 10px #f4f4f4;
+
+    .article-card-link {
+      transform: translateX(8px);
+    }
+  }
+}
+
+.article-card-link {
+  transition: transform 0.4s;
 }
 </style>
