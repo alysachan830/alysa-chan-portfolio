@@ -1,6 +1,12 @@
 <template>
   <div>
-    <div class="fixed-top bg-primary">
+    <div
+      :class="[
+        { 'bg-primary text-white': !isWindowTop || showMenu },
+        'fixed-top',
+        'top-nav-wrap',
+      ]"
+    >
       <nav
         class="
           top-nav
@@ -26,7 +32,10 @@
           <li class="me-8">
             <a href="#">
               <img
-                class="social-media-icon"
+                :class="[
+                  { 'icon--white': !isWindowTop },
+                  'top-nav__social-media-icon',
+                ]"
                 src="images/5282542_linkedin_network_social network_linkedin logo_icon.svg"
                 alt=""
               />
@@ -35,7 +44,10 @@
           <li>
             <a href="#">
               <img
-                class="social-media-icon"
+                :class="[
+                  { 'icon--white': !isWindowTop },
+                  'top-nav__social-media-icon',
+                ]"
                 src="images/317712_code repository_github_repository_resource_icon.svg"
                 alt=""
               />
@@ -45,6 +57,7 @@
         <button
           :class="[
             { 'top-nav-toggle--cross': showMenu },
+            { 'border-white top-nav-toggle--white': !isWindowTop || showMenu },
             'top-nav-toggle d-md-none',
           ]"
           @click="showMenu = !showMenu"
@@ -52,7 +65,7 @@
       </nav>
     </div>
     <transition name="slide">
-      <div v-show="showMenu" class="menu py-16 bg-primary">
+      <div v-show="showMenu" class="menu py-16 bg-primary d-md-none">
         <div class="container">
           <ul>
             <li class="mb-4">
@@ -155,7 +168,7 @@
     </footer>
     <transition name="fade">
       <button
-        v-show="toggleScroll"
+        v-show="!isWindowTop"
         class="scroll-to-top-btn position-fixed btn"
         @click="scrollToTop"
       >
@@ -171,20 +184,20 @@ import debounce from 'lodash/debounce'
 export default {
   data() {
     return {
-      toggleScroll: false,
+      isWindowTop: true,
       showMenu: false,
     }
   },
   mounted() {
-    const handleScroll = debounce(this.checkScrollPosition, 1000)
+    const handleScroll = debounce(this.checkScrollPosition, 300)
     window.addEventListener('scroll', handleScroll)
   },
   methods: {
     checkScrollPosition() {
-      if (window.scrollY > 700) {
-        this.toggleScroll = true
+      if (window.scrollY === 0) {
+        this.isWindowTop = true
       } else {
-        this.toggleScroll = false
+        this.isWindowTop = false
       }
     },
     scrollToTop() {
@@ -199,6 +212,15 @@ export default {
 .top-nav {
   height: 64px;
   z-index: 10;
+
+  &-wrap {
+    transition: all 0.2s;
+  }
+
+  &__social-media-icon {
+    height: 20px;
+    width: 20px;
+  }
 }
 
 .slide-enter-active {
@@ -213,29 +235,15 @@ export default {
   transform: translateY(-100%);
 }
 
-.slide-enter-to {
-  // transform: translateX(100%);
-}
-
 .top-nav-toggle {
   border-top: 3px solid #000000;
-  height: 30px;
-  width: 40px;
+  height: 18px;
+  width: 36px;
   border-width: 3px 0 0 0;
   background: transparent;
   position: relative;
 
-  &::before {
-    transition: transform 0.3s;
-    content: '';
-    position: absolute;
-    background: #000000;
-    height: 3px;
-    width: 100%;
-    left: 0;
-    top: 6px;
-  }
-
+  &::before,
   &::after {
     transition: transform 0.3s;
     content: '';
@@ -244,7 +252,21 @@ export default {
     height: 3px;
     width: 100%;
     left: 0;
+  }
+
+  &::before {
+    top: 6px;
+  }
+
+  &::after {
     top: 15px;
+  }
+
+  &--white {
+    &::before,
+    &::after {
+      background: #ffffff;
+    }
   }
 
   &--cross {
