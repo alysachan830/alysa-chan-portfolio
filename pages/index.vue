@@ -12,7 +12,6 @@
         "
       >
         <div class="text-center">
-          <!-- <img class="banner-icon" src="@/assets/images/dev_icon.png" alt="" /> -->
           <p class="banner-icon fw-bold text-primary">
             &lt; <span class="align-middle">/</span> &gt;
           </p>
@@ -191,6 +190,7 @@ export default {
 
 .banner-bg {
   &-wrap {
+    margin-top: 64px;
     height: 50vh;
   }
 

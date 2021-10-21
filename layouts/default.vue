@@ -1,47 +1,88 @@
 <template>
   <div>
-    <nav
-      class="
-        top-nav
-        d-flex
-        justify-content-between
-        align-items-center
-        container
-      "
-    >
-      <h1 class="font-l">
-        <NuxtLink to="/">Alysa Chan</NuxtLink>
-      </h1>
-      <ul class="d-flex align-items-center">
-        <li class="me-16">
-          <a class="fw-medium text-uppercase" href="#">works</a>
-        </li>
-        <li class="me-16">
-          <a class="fw-medium text-uppercase" href="#">articles</a>
-        </li>
-        <li class="me-16">
-          <a class="fw-medium text-uppercase" href="#">about</a>
-        </li>
-        <li class="me-8">
-          <a href="#">
-            <img
-              class="social-media-icon"
-              src="images/5282542_linkedin_network_social network_linkedin logo_icon.svg"
-              alt=""
-            />
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <img
-              class="social-media-icon"
-              src="images/317712_code repository_github_repository_resource_icon.svg"
-              alt=""
-            />
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <div class="fixed-top bg-primary">
+      <nav
+        class="
+          top-nav
+          d-flex
+          justify-content-between
+          align-items-center
+          container
+        "
+      >
+        <h1 class="font-l">
+          <NuxtLink to="/">Alysa Chan</NuxtLink>
+        </h1>
+        <ul class="d-none d-md-flex align-items-center">
+          <li class="me-16">
+            <a class="fw-medium text-uppercase" href="#">works</a>
+          </li>
+          <li class="me-16">
+            <a class="fw-medium text-uppercase" href="#">articles</a>
+          </li>
+          <li class="me-16">
+            <a class="fw-medium text-uppercase" href="#">about</a>
+          </li>
+          <li class="me-8">
+            <a href="#">
+              <img
+                class="social-media-icon"
+                src="images/5282542_linkedin_network_social network_linkedin logo_icon.svg"
+                alt=""
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                class="social-media-icon"
+                src="images/317712_code repository_github_repository_resource_icon.svg"
+                alt=""
+              />
+            </a>
+          </li>
+        </ul>
+        <button
+          :class="[
+            { 'top-nav-toggle--cross': showMenu },
+            'top-nav-toggle d-md-none',
+          ]"
+          @click="showMenu = !showMenu"
+        ></button>
+      </nav>
+    </div>
+    <transition name="slide">
+      <div v-show="showMenu" class="menu py-16 bg-primary">
+        <div class="container">
+          <ul>
+            <li class="mb-4">
+              <NuxtLink
+                to="#"
+                class="text-uppercase font-4xl fw-bold text-white"
+              >
+                Works
+              </NuxtLink>
+            </li>
+            <li class="mb-4">
+              <NuxtLink
+                to="#"
+                class="text-uppercase font-4xl fw-bold text-white"
+              >
+                Articles
+              </NuxtLink>
+            </li>
+            <li class="mb-4">
+              <NuxtLink
+                to="#"
+                class="text-uppercase font-4xl fw-bold text-white"
+              >
+                About
+              </NuxtLink>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </transition>
     <Nuxt />
     <footer class="bg-primary pt-20 pb-16">
       <div class="row text-center text-white justify-content-center mb-18">
@@ -131,6 +172,7 @@ export default {
   data() {
     return {
       toggleScroll: false,
+      showMenu: false,
     }
   },
   mounted() {
@@ -157,6 +199,73 @@ export default {
 .top-nav {
   height: 64px;
   z-index: 10;
+}
+
+.slide-enter-active {
+  transition: all 0.4s ease;
+}
+.slide-leave-active {
+  transition: all 0.4s ease;
+}
+
+.slide-enter, .slide-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateY(-100%);
+}
+
+.slide-enter-to {
+  // transform: translateX(100%);
+}
+
+.top-nav-toggle {
+  border-top: 3px solid #000000;
+  height: 30px;
+  width: 40px;
+  border-width: 3px 0 0 0;
+  background: transparent;
+  position: relative;
+
+  &::before {
+    transition: transform 0.3s;
+    content: '';
+    position: absolute;
+    background: #000000;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    top: 6px;
+  }
+
+  &::after {
+    transition: transform 0.3s;
+    content: '';
+    position: absolute;
+    background: #000000;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    top: 15px;
+  }
+
+  &--cross {
+    border-top: 0px solid #000000;
+    &::before {
+      transform: rotate(45deg);
+    }
+    &::after {
+      top: 6px;
+      transform: rotate(135deg);
+    }
+  }
+}
+
+.menu {
+  position: fixed;
+  z-index: 20;
+  top: 64px;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .icon--white {
