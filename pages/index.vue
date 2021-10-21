@@ -84,30 +84,38 @@
             <li
               v-for="article in articles"
               :key="article.title"
-              class="article-card"
+              class="article-card p-16 p-md-0 mb-6"
             >
-              <a href="#" class="row justify-content-center py-18">
-                <div class="col-5">
+              <a
+                :href="article.url"
+                class="row justify-content-center py-md-18 py-0"
+                target="_blank"
+              >
+                <div class="col-md-5 mb-16 mb-md-0">
                   <a href="#" class="mb-10">
-                    <img class="article-icon" :src="article.img" alt="" />
+                    <img
+                      class="article-card__icon mx-auto mx-md-0"
+                      :src="article.img"
+                      alt=""
+                    />
                   </a>
                   <div>
                     <p class="mb-2 text-info fw-bold">
                       {{ article.subTitle }}
                     </p>
                     <h3 class="mb-10 fw-bold">{{ article.title }}</h3>
-                    <p>{{ article.post }} articles</p>
+                    <p class="text-info">{{ article.post }} articles</p>
                   </div>
                 </div>
-                <div class="col-5">
+                <div class="col-md-5">
                   <p v-if="article.prize" class="text-primary font-s mb-6">
                     <span class="material-icons align-top"> emoji_events </span>
                     {{ article.prize }}
                   </p>
-                  <p class="mb-16">
+                  <p class="mb-16 font-s font-md-base">
                     {{ article.description }}
                   </p>
-                  <span class="text-primary text-end d-block article-card-link"
+                  <span class="text-primary text-end d-block article-card__link"
                     >Read more
                     <span class="material-icons align-middle">
                       chevron_right
@@ -198,23 +206,24 @@ export default {
   height: 30px;
 }
 
-.article-icon {
-  width: 100px;
-  height: 100px;
-}
-
 .article-card {
   transition: box-shadow 0.2s;
+
+  &__icon {
+    width: 100px;
+    height: 100px;
+  }
+
   &:hover {
     box-shadow: 2px 4px 10px #f4f4f4;
 
-    .article-card-link {
+    .article-card__link {
       transform: translateX(8px);
     }
   }
 }
 
-.article-card-link {
+.article-card__link {
   transition: transform 0.4s;
 }
 </style>
