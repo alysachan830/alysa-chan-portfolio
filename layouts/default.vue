@@ -35,7 +35,7 @@
       </ul>
     </nav>
     <Nuxt />
-    <footer class="bg-primary pt-20 pb-12">
+    <footer class="bg-primary pt-20 pb-16">
       <div class="row text-center text-white justify-content-center mb-18">
         <div class="col-md-8">
           <p class="font-md-4xl font-2xl fw-bold">Let's get in touch!</p>
@@ -167,10 +167,10 @@ nav {
   transition: all 0.3s;
   bottom: 50px;
   right: 50px;
-  background: #ededed;
+  background: #f2f2f2;
 
   &:hover {
-    box-shadow: 2px 4px 10px #f4f4f4;
+    box-shadow: 2px 4px 10px rgba(184, 184, 184, 0.2);
     transform: translateY(-4px);
   }
 }
