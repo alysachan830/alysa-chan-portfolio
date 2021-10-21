@@ -35,7 +35,7 @@
       </ul>
     </nav>
     <Nuxt />
-    <!-- <footer class="bg-primary pt-20 pb-12">
+    <footer class="bg-primary pt-20 pb-12">
       <div class="row text-center text-white justify-content-center mb-18">
         <div class="col-md-8">
           <p class="font-md-4xl font-2xl fw-bold">Let's get in touch!</p>
@@ -103,7 +103,7 @@
         </ul>
         <p class="font-xs text-white">2021 © Alysa Chan</p>
       </nav>
-    </footer> -->
+    </footer>
   </div>
 </template>
 
