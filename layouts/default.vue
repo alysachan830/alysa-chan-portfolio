@@ -111,13 +111,18 @@
 export default {}
 </script>
 
-<style>
+<style lang="scss">
 nav {
   z-index: 10;
 }
 
 .icon--white {
+  transition: filter 0.3s;
   filter: invert(1);
+
+  &:hover {
+    filter: invert(80%);
+  }
 }
 
 .social-media-icon {
