@@ -3,21 +3,21 @@
     <div
       :class="[
         { 'bg-primary text-white': !isWindowTop || showMenu },
-        'fixed-top',
-        'top-nav-wrap',
+        'fixed-top top-nav-wrap',
       ]"
     >
       <nav
         class="
           top-nav
+          my-auto
           d-flex
           justify-content-between
           align-items-center
           container
         "
       >
-        <h1 class="font-l">
-          <NuxtLink to="/">Alysa Chan</NuxtLink>
+        <h1>
+          <NuxtLink to="/" class="font-md-l font-m">Alysa Chan</NuxtLink>
         </h1>
         <ul class="d-none d-md-flex align-items-center">
           <li class="me-16">
@@ -96,85 +96,89 @@
         </div>
       </div>
     </transition>
-    <Nuxt />
-    <footer class="bg-primary pt-20 pb-16">
-      <div class="row text-center text-white justify-content-center mb-18">
-        <div class="col-md-8">
-          <p class="font-md-4xl font-2xl fw-bold">Let's get in touch!</p>
-          <p class="font-md-m mb-18">
-            I’m currently looking for a full-time junior front-end developer job
-            position in Hong Kong.
-          </p>
-          <ul class="d-inline-block d-flex justify-content-center">
-            <li class="me-10 md-md-0 mb-10">
+    <div>
+      <Nuxt />
+      <footer class="bg-primary pt-20 pb-16">
+        <div class="row text-center text-white justify-content-center mb-18">
+          <div class="col-md-8">
+            <p class="font-md-4xl font-2xl fw-bold">Let's get in touch!</p>
+            <p class="font-md-m mb-18">
+              I’m currently looking for a full-time junior front-end developer
+              job position in Hong Kong.
+            </p>
+            <ul class="d-inline-block d-flex justify-content-center">
+              <li class="me-10 md-md-0 mb-10">
+                <a
+                  href="https://github.com/alysachan830"
+                  class="d-flex align-items-center"
+                >
+                  <img
+                    class="social-media-icon icon--white me-4"
+                    src="images/317712_code repository_github_repository_resource_icon.svg"
+                    alt="github"
+                  />
+                </a>
+              </li>
+              <li class="me-10 md-md-0 mb-10">
+                <a href="#" class="d-flex align-items-center">
+                  <img
+                    class="social-media-icon icon--white me-4"
+                    src="images/5282542_linkedin_network_social network_linkedin logo_icon.svg"
+                    alt="linkedin"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#" class="d-flex align-items-center">
+                  <img
+                    class="social-media-icon icon--white me-4"
+                    src="images/email_black_24dp.svg"
+                    alt="email"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <nav
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <ul class="d-flex">
+            <li class="me-md-16 me-12 font-md-base font-s">
               <a
-                href="https://github.com/alysachan830"
-                class="d-flex align-items-center"
+                class="hover--secondary fw-medium text-uppercase text-white"
+                href="#"
+                >works</a
               >
-                <img
-                  class="social-media-icon icon--white me-4"
-                  src="images/317712_code repository_github_repository_resource_icon.svg"
-                  alt="github"
-                />
-              </a>
             </li>
-            <li class="me-10 md-md-0 mb-10">
-              <a href="#" class="d-flex align-items-center">
-                <img
-                  class="social-media-icon icon--white me-4"
-                  src="images/5282542_linkedin_network_social network_linkedin logo_icon.svg"
-                  alt="linkedin"
-                />
-              </a>
+            <li class="me-md-16 me-12 font-md-base font-s">
+              <a
+                class="hover--secondary fw-medium text-uppercase text-white"
+                href="#"
+                >articles</a
+              >
             </li>
-            <li>
-              <a href="#" class="d-flex align-items-center">
-                <img
-                  class="social-media-icon icon--white me-4"
-                  src="images/email_black_24dp.svg"
-                  alt="email"
-                />
-              </a>
+            <li class="me-md-16 me-12 font-md-base font-s">
+              <a
+                class="hover--secondary fw-medium text-uppercase text-white"
+                href="#"
+                >about</a
+              >
             </li>
           </ul>
-        </div>
-      </div>
-      <nav class="container d-flex justify-content-between align-items-center">
-        <ul class="d-flex">
-          <li class="me-md-16 me-12 font-md-base font-s">
-            <a
-              class="hover--secondary fw-medium text-uppercase text-white"
-              href="#"
-              >works</a
-            >
-          </li>
-          <li class="me-md-16 me-12 font-md-base font-s">
-            <a
-              class="hover--secondary fw-medium text-uppercase text-white"
-              href="#"
-              >articles</a
-            >
-          </li>
-          <li class="me-md-16 me-12 font-md-base font-s">
-            <a
-              class="hover--secondary fw-medium text-uppercase text-white"
-              href="#"
-              >about</a
-            >
-          </li>
-        </ul>
-        <p class="font-xs text-white">2021 © Alysa Chan</p>
-      </nav>
-    </footer>
-    <transition name="fade">
-      <button
-        v-show="!isWindowTop"
-        class="scroll-to-top-btn position-fixed btn"
-        @click="scrollToTop"
-      >
-        <span class="text-info material-icons"> arrow_upward </span>
-      </button>
-    </transition>
+          <p class="font-xs text-white">2021 © Alysa Chan</p>
+        </nav>
+      </footer>
+      <transition name="fade">
+        <button
+          v-show="!isWindowTop"
+          class="scroll-to-top-btn position-fixed btn"
+          @click="scrollToTop"
+        >
+          <span class="text-info material-icons"> arrow_upward </span>
+        </button>
+      </transition>
+    </div>
   </div>
 </template>
 
@@ -211,8 +215,6 @@ export default {
 <style lang="scss">
 .top-nav {
   height: 64px;
-  z-index: 10;
-
   &-wrap {
     transition: all 0.2s;
   }

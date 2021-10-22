@@ -4,6 +4,7 @@
       <div
         class="
           banner-bg
+          h-100
           position-absolute
           vw-100
           d-flex
@@ -180,6 +181,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/stylesheets/all';
+
 .banner-icon {
   font-size: 50px;
 
@@ -189,19 +192,27 @@ export default {
 }
 
 .banner-bg {
+  // Nav bar is 64px height
+  // margin-top: 64px;
   &-wrap {
+    // Nav bar is 64px height
     margin-top: 64px;
-    height: 50vh;
+    height: 60vh;
   }
 
   background: linear-gradient(#ffffff, #f0f1ff, #c9cdff);
   top: 0;
   left: 0;
-  height: calc(50vh - 64px);
+  // height: calc(60vh - 64px);
 
   &__title {
-    font-size: 84px;
-    letter-spacing: 4px;
+    @include media-breakpoint-up(md) {
+      font-size: 84px;
+      letter-spacing: 4px;
+    }
+
+    font-size: 50px;
+    letter-spacing: 2px;
   }
 }
 
