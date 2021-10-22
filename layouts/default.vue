@@ -101,8 +101,8 @@
       <footer class="bg-primary pt-20 pb-16">
         <div class="row text-center text-white justify-content-center mb-18">
           <div class="col-md-8">
-            <p class="font-md-4xl font-2xl fw-bold">Let's get in touch!</p>
-            <p class="font-md-m mb-18">
+            <p class="font-md-4xl font-xl fw-bold">Let's get in touch!</p>
+            <p class="font-md-m font-s mb-md-18 mb-10">
               I’m currently looking for a full-time junior front-end developer
               job position in Hong Kong.
             </p>
