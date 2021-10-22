@@ -231,7 +231,7 @@
                   </div>
                 </div>
               </section>
-              <section class="mb-21">
+              <section>
                 <h2 class="mb-18 fw-bold font-l">
                   Remote collaboration with back-end developer
                 </h2>

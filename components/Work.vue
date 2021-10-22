@@ -45,8 +45,14 @@
         </ul>
       </div>
     </div>
-    <div class="container content">
+    <div class="container content mb-18">
       <slot name="content"></slot>
+    </div>
+    <div class="container mb-21">
+      <a class="text-info mb-8 mb-md-0 font-m text-end" href="/#works"
+        >Back to works
+        <span class="material-icons align-middle"> chevron_right </span>
+      </a>
     </div>
   </div>
 </template>
@@ -61,7 +67,7 @@ export default {}
 .cover-img {
   img {
     width: 100vw;
-    height: 740px;
+    height: 1280px;
   }
 }
 
