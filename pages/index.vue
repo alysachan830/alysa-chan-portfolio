@@ -12,15 +12,15 @@
           align-items-center
         "
       >
-        <div class="text-center">
+        <div class="text-center container">
           <p class="banner-icon fw-bold text-primary">
             &lt; <span class="align-middle">/</span> &gt;
           </p>
           <h2 class="text-uppercase fw-bold banner-bg__title">alysa chan</h2>
-          <h3 class="text-info font-l mb-16">
+          <h3 class="text-info font-md-l font-m mb-md-16 mb-10">
             A front-end developer with design sense.
           </h3>
-          <ul class="d-flex justify-content-center mb-18">
+          <ul class="d-flex justify-content-center mb-md-18 mb-12">
             <li class="me-10">
               <a href="#">
                 <img
@@ -42,7 +42,7 @@
           </ul>
           <a
             href="#works"
-            class="px-14 py-4 btn btn-primary btn-lg text-uppercase"
+            class="px-md-14 py-md-4 btn btn-primary btn-md-lg text-uppercase"
             >All works</a
           >
         </div>
@@ -184,10 +184,16 @@ export default {
 @import '@/assets/stylesheets/all';
 
 .banner-icon {
-  font-size: 50px;
+  font-size: 40px;
+  @include media-breakpoint-up(md) {
+    font-size: 50px;
+  }
 
   span {
-    font-size: 64px;
+    font-size: 54px;
+    @include media-breakpoint-up(md) {
+      font-size: 64px;
+    }
   }
 }
 
@@ -198,6 +204,9 @@ export default {
     // Nav bar is 64px height
     margin-top: 64px;
     height: 60vh;
+    @include media-breakpoint-up(md) {
+      height: 60vh;
+    }
   }
 
   background: linear-gradient(#ffffff, #f0f1ff, #c9cdff);
@@ -211,7 +220,7 @@ export default {
       letter-spacing: 4px;
     }
 
-    font-size: 50px;
+    font-size: 34px;
     letter-spacing: 2px;
   }
 }
