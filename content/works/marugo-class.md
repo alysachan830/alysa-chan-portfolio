@@ -31,7 +31,7 @@ Marugo Class LINE Chatbot focuses on few core features that helps students to ma
     <img src="/images/show_next_lesson_and_reminder.jpg">
 </section>
 
-<section>
+<section class="markdown-section">
     <div class="caption">Connect with Web App through LIFF browser</div>
     <img src="/images/show_liff.jpg">
 </section>
@@ -68,7 +68,7 @@ Compared to chatbot, Marugo Class Web App provides more advance features for stu
 
 </section>
 
-<section>
+<section class="markdown-section">
 
 ## Common Features
 
@@ -92,7 +92,7 @@ Compared to chatbot, Marugo Class Web App provides more advance features for stu
 
 </section>
 
-<section>
+<section class="markdown-section">
 
 ## Features for students
 
@@ -110,7 +110,7 @@ Compared to chatbot, Marugo Class Web App provides more advance features for stu
 
 </section>
 
-<section>
+<section class="markdown-section">
 
 ## Responsive design
 

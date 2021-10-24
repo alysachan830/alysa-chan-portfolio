@@ -139,7 +139,7 @@ export default {
   }
 }
 
-section {
+.markdown-section {
   margin-bottom: 92px;
 
   @include media-breakpoint-up(md) {

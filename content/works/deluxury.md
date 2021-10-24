@@ -8,7 +8,7 @@ technologies: Adobe Illustrator, Adobe Photoshop
 description: Website design for Deluxury HK's e-commerce website. As a designer in a digital marketing company, I was responsible for redesigning the whole website through proposing different art directions and executing the design for the client.
 ---
 
-<section class="mb-21">
+<section class="markdown-section">
 
 **Problems of the former website**
 
@@ -32,7 +32,7 @@ description: Website design for Deluxury HK's e-commerce website. As a designer 
     <img src="/images/deluxury_all_products.jpg">
 </section>
 
-<section class="mb-21">
+<section class="markdown-section">
 
 ## Responsive version
 

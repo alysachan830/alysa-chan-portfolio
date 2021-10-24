@@ -35,7 +35,7 @@ description: Flash ticketing is a personal project which imitates an online tick
 
 </section>
 
-<section class="mb-21">
+<section class="markdown-section">
 
 ## Event details and tickets
 
@@ -53,7 +53,7 @@ description: Flash ticketing is a personal project which imitates an online tick
 
 </section>
 
-<section class="mb-21">
+<section class="markdown-section">
 
 ## Responsive design
 
@@ -66,7 +66,7 @@ description: Flash ticketing is a personal project which imitates an online tick
 
 </section>
 
-<section class="mb-21">
+<section class="markdown-section">
 
 ## Admin dashboard
 
