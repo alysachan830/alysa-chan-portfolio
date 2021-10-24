@@ -24,7 +24,7 @@
             <li class="me-10">
               <a href="#">
                 <img
-                  class="social-media-icon"
+                  class="icon--l"
                   src="images/5282542_linkedin_network_social network_linkedin logo_icon.svg"
                   alt=""
                 />
@@ -33,7 +33,7 @@
             <li>
               <a href="#">
                 <img
-                  class="social-media-icon"
+                  class="icon--l"
                   src="images/317712_code repository_github_repository_resource_icon.svg"
                   alt=""
                 />
@@ -53,30 +53,53 @@
         <h2 id="works" class="fw-bold font-2xl mb-20 text-uppercase">Works</h2>
         <ul>
           <li
-            v-for="work in works"
+            v-for="work in workIntros"
             :key="work.title"
             class="row justify-content-between mb-20"
           >
-            <a href="#" class="col-md-7 mb-5 mb-md-0">
+            <NuxtLink :to="`/works/${work.path}`" class="col-md-7 mb-5 mb-md-0">
               <div class="img--hover--zoom">
-                <img :src="work.img" alt="" />
+                <img :src="work.imageUrl" :alt="work.title" />
               </div>
-            </a>
-            <a href="#" class="col-md-4">
-              <h2 class="mb-5">{{ work.title }}</h2>
-              <ul class="d-flex text-info mb-12">
-                <li v-for="skill in work.skills" :key="skill" class="me-5">
-                  {{ skill }}
-                </li>
-              </ul>
-              <a v-if="work.sourceCode" :href="work.sourceCode">
-                <img
-                  class="social-media-icon"
-                  src="images/317712_code repository_github_repository_resource_icon.svg"
-                  alt="github"
-                />
-              </a>
-            </a>
+            </NuxtLink>
+            <div class="col-md-4">
+              <NuxtLink :to="`/works/${work.path}`" class="mb-14">
+                <span class="mb-3 d-block"> {{ work.year }} </span>
+                <span class="mb-1 d-block font-l fw-medium">{{
+                  work.title
+                }}</span>
+                <ul class="d-flex text-info font-s">
+                  <li
+                    v-for="skill in work.technologies"
+                    :key="skill"
+                    class="me-5"
+                  >
+                    {{ skill }}
+                  </li>
+                </ul>
+              </NuxtLink>
+              <div class="d-flex">
+                <a
+                  v-if="work.sourceCode"
+                  :href="work.sourceCode"
+                  class="me-8"
+                  target="_blank"
+                >
+                  <img
+                    class="icon"
+                    src="images/317712_code repository_github_repository_resource_icon.svg"
+                    alt="github"
+                  />
+                </a>
+                <a v-if="work.url" :href="work.url" target="_blank">
+                  <img
+                    class="icon"
+                    src="images/2561457_link_icon.svg"
+                    alt="link"
+                  />
+                </a>
+              </div>
+            </div>
           </li>
         </ul>
       </section>
@@ -136,26 +159,22 @@
 
 <script>
 export default {
+  async asyncData({ $content, params, error }) {
+    const workIntros = await $content('workIntros')
+      .fetch()
+      .then((res) => {
+        console.log(res[0])
+        return res[0].workIntros
+      })
+      .catch(() => {
+        error({ statusCode: 404, message: 'Page not found' })
+      })
+    return {
+      workIntros,
+    }
+  },
   data() {
     return {
-      works: [
-        {
-          title: 'Marugo Class Web App & LINE Chatbot',
-          img: 'images/marugo-mock-up.jpg',
-          skills: ['Vue.js', 'Express.js', 'Bootstrap 5'],
-        },
-        {
-          title: 'Flash Ticketing',
-          img: 'images/marugo-mock-up.jpg',
-          skills: ['Nuxt.js', 'Express.js', 'Bootstrap 5'],
-          sourceCode: 'https://github.com/alysachan830/flash-ticketing',
-        },
-        {
-          title: 'Deluxury Website Design',
-          img: 'images/deluxury_cover.jpg',
-          skills: ['UI/UX design'],
-        },
-      ],
       articles: [
         {
           img: 'images/282802_javascript_js_icon.svg',
@@ -198,8 +217,6 @@ export default {
 }
 
 .banner-bg {
-  // Nav bar is 64px height
-  // margin-top: 64px;
   &-wrap {
     // Nav bar is 64px height
     margin-top: 64px;
@@ -212,7 +229,6 @@ export default {
   background: linear-gradient(#ffffff, #f0f1ff, #c9cdff);
   top: 0;
   left: 0;
-  // height: calc(60vh - 64px);
 
   &__title {
     @include media-breakpoint-up(md) {
@@ -229,9 +245,14 @@ export default {
   background: #fcfcfc;
 }
 
-.social-media-icon {
-  width: 30px;
-  height: 30px;
+.icon {
+  width: 22px;
+  height: 22px;
+
+  &--l {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .article-card {

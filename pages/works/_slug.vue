@@ -72,7 +72,7 @@
 </template>
 
 <script>
-import ImageWrap from '../components/ImageWrap.vue'
+import ImageWrap from '../../components/ImageWrap.vue'
 
 export default {
   components: {
@@ -81,7 +81,7 @@ export default {
   },
   async asyncData({ $content, params, error }) {
     const slug = params.slug || 'index'
-    const page = await $content(slug)
+    const page = await $content(`works/${slug}`)
       .fetch()
       .catch(() => {
         error({ statusCode: 404, message: 'Page not found' })

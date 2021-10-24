@@ -1,0 +1,31 @@
+{
+  "workIntros": [
+    {
+      "title": "Marugo Class Web App & LINE Chatbot",
+      "year": 2021,
+      "technologies": ["Vue.js", "Express.js", "Bootstrap 5"],
+      "imageUrl": "/images/work-intro_marugo-mock-up.jpg",
+      "sourceCode": null,
+      "url": null,
+      "path": "marugo-class"
+    },
+    {
+      "title": "Flash Ticketing",
+      "year": 2021,
+      "technologies": ["Nuxt.js", "Bootstrap 5"],
+      "imageUrl": "/images/work-intro_flash_ticketing_mock_up.jpg",
+      "sourceCode": "https://github.com/alysachan830/flash-ticketing",
+      "url": "https://flash-ticketing.herokuapp.com/",
+      "path": "flash-ticketing"
+    },
+    {
+      "title": "Deluxury HK Web Design",
+      "year": 2020,
+      "technologies": ["Web design"],
+      "imageUrl": "/images/work-intro_deluxury_cover.jpg",
+      "sourceCode": null,
+      "url": "https://www.deluxury.com.hk/",
+      "path": "deluxury"
+    }
+  ]
+}
