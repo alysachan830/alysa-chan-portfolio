@@ -141,9 +141,15 @@
           </div>
         </div>
         <nav
-          class="container d-flex justify-content-between align-items-center"
+          class="
+            container
+            d-flex
+            flex-md-row flex-column
+            justify-content-between
+            align-items-center
+          "
         >
-          <ul class="d-flex">
+          <ul class="d-flex mb-8 mb-md-0">
             <li class="me-md-16 me-12 font-md-base font-s">
               <a
                 class="hover--secondary fw-medium text-uppercase text-white"
@@ -166,6 +172,18 @@
               >
             </li>
           </ul>
+          <a
+            href="https://github.com/alysachan830/alysa-chan-portfolio"
+            class="d-flex align-items-center font-s text-white"
+            target="_blank"
+          >
+            <img
+              class="footer-icon icon--white me-3 d-none d-md-block"
+              src="images/317712_code repository_github_repository_resource_icon.svg"
+              alt="github"
+            />
+            <span class="hover--secondary">Developed by Alysa Chan</span></a
+          >
           <p class="font-xs text-white">2021 © Alysa Chan</p>
         </nav>
       </footer>
@@ -303,6 +321,10 @@ export default {
 
 .social-media-icon {
   width: 28px;
+}
+
+.footer-icon {
+  width: 20px;
 }
 
 .scroll-to-top-btn {
