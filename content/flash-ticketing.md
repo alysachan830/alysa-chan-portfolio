@@ -18,20 +18,20 @@ description: Flash ticketing is a personal project which imitates an online tick
 
 **Ticketing platform**
 
-- Show all events in different categories, with different types, zone seating, event dates of tickets.
-- Add, edit or delete items in shopping cart and my favourite list.
-- Form validation in order form with Vee-validate.
-- Apply coupon with coupon code.
-- Add an order to server after user finishes his purchase.
+- Show all events in different categories, with different types, zone seating, event dates of tickets
+- Add, edit or delete items in shopping cart and my favourite list
+- Form validation in order form with Vee-validate
+- Apply coupon with coupon code
+- Add an order to server after user finishes his purchase
 
 **Admin dashboard**
 
-- Login and logout feature with token-based authentication.
-- Add, edit or delete events, orders and coupons.
+- Login and logout feature with token-based authentication
+- Add, edit or delete events, orders and coupons
 
 **Deployment**
 
-- Automatic deployment on Vercel with a GitHub branch.
+- Automatic deployment on Vercel with a GitHub branch
 
 </section>
 

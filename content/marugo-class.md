@@ -145,9 +145,3 @@ My role
     <span class="caption">Flowchart of how to send reminder to student by pushing message on LINE chatbot</span>
     <img src="/images/liff_flowchart.jpg">
 </section>
-
-<!-- <image-wrap class="pt-8">
-    <template #img>
-        <img src="images/show_next_lesson_and_reminder.jpg">
-    </template>
-</image-wrap> -->
