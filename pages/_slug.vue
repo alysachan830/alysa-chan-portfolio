@@ -1,9 +1,4 @@
 <template>
-  <!-- <div>
-    <h1>{{ page.title }}</h1>
-    <p>{{ page.description }}</p>
-    <nuxt-content :document="page" />
-  </div> -->
   <div class="mt-21">
     <div class="container mb-16">
       <div class="row justify-content-between flex-column-reverse flex-md-row">
