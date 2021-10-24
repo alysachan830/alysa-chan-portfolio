@@ -56,7 +56,7 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="content mb-18">
+          <div class="markdown-content mb-18">
             <nuxt-content :document="page" />
           </div>
         </div>
@@ -120,7 +120,7 @@ export default {
 }
 
 .role,
-.content ul {
+.markdown-content ul {
   list-style-type: disc;
   list-style-position: inside;
 }
@@ -139,15 +139,15 @@ export default {
   }
 }
 
-.markdown-section {
-  margin-bottom: 92px;
+.markdown-content {
+  section {
+    margin-bottom: 92px;
 
-  @include media-breakpoint-up(md) {
-    margin-bottom: 192px;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 192px;
+    }
   }
-}
 
-.content {
   p {
     width: 70%;
   }
