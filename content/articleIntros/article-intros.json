@@ -1,0 +1,21 @@
+{
+  "articleIntros": [
+    {
+      "img": "images/282802_javascript_js_icon.svg",
+      "title": "JavaScript 基本功修煉",
+      "subTitle": "12th iThome Ironman 第 12 屆 IT 邦鐵人賽",
+      "prize": "Judge's selection 評選佳作",
+      "post": 31,
+      "description": "iThome Ironman is a competition of writing technical articles for 30 days. In September 2020 , I joined the competition which had around 500 participants and shared my knowledge about JavaScript for 30 days.  My series of articles was selected as one of the Judge's Selections (評選佳作) at the end of the competition.",
+      "url": "https://ithelp.ithome.com.tw/users/20128534/ironman/3460"
+    },
+    {
+      "img": "images/4691448_dot_js_vue_icon.svg",
+      "title": "不只懂 Vue 語法：Vue.js 觀念篇",
+      "subTitle": "13th iThome Ironman 第 13 屆 IT 邦鐵人賽",
+      "post": 31,
+      "description": "I participated in 13th iThome Ironman competition again in September 2021, for writing technical articles about the concepts of Vue.js for 30 days. To strengthen my skills with Vue.js, I tried to have an in-depth study in the syntax and core concepts in Vue.js through sharing my articles online.",
+      "url": "https://ithelp.ithome.com.tw/users/20128534/ironman/4377"
+    }
+  ]
+}
