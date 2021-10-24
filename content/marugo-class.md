@@ -132,7 +132,7 @@ My role
 - Design ER diagram for SQL database
 - Plan chatbot development with flowchart
 - Write API documentation on Apiary
-- Communicate with a back-end developer through Discord and manage all materials together on Notion
+- Communicate with back-end developer through Discord and manage all materials together on Notion
 
 </section>
 
