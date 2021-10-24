@@ -4,7 +4,7 @@
       <div class="row justify-content-between flex-column-reverse flex-md-row">
         <div class="col-md-8">
           <span class="font-m"> {{ page.year }} </span>
-          <h2 class="font-2xl">{{ page.title }}</h2>
+          <h2 class="font-md-2xl font-xl">{{ page.title }}</h2>
         </div>
         <div class="col-md-4">
           <a class="text-info text-end mb-8 mb-md-0 font-s" href="/#works"
@@ -17,13 +17,14 @@
       </div>
     </div>
 
-    <div class="cover-img mb-21">
-      <img :src="page.coverImg" :alt="page.title" />
-    </div>
+    <div
+      class="cover-img mb-md-21 mb-20"
+      :style="`background-image: url(${page.coverImg})`"
+    ></div>
     <div class="body">
-      <div class="container mb-21">
+      <div class="container mb-md-21 mb-20">
         <div class="row justify-content-between mb-20 mb-md-0">
-          <div class="col-md-7">
+          <div class="col-md-7 mb-18 mb-md-0">
             <h2 class="fw-bold font-l mb-8">
               {{ page.title }}
             </h2>
@@ -97,8 +98,23 @@ export default {
 @import '@/assets/stylesheets/all';
 
 .cover-img {
-  img {
-    width: 100vw;
+  width: 100vw;
+  height: 1280px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  height: 397px;
+
+  @include media-breakpoint-up(md) {
+    height: 532px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    height: 665px;
+  }
+
+  @include media-breakpoint-up(xxl) {
     height: 1280px;
   }
 }
@@ -120,6 +136,14 @@ export default {
     font-weight: bold;
     font-size: 24px;
     margin-bottom: 32px;
+  }
+}
+
+section {
+  margin-bottom: 92px;
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 192px;
   }
 }
 
