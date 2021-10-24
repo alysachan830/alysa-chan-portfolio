@@ -306,10 +306,10 @@ export default {
 }
 
 .scroll-to-top-btn {
-  transition: all 0.3s;
+  transition: all 0.3s !important;
   bottom: 50px;
   right: 50px;
-  background: #f2f2f2;
+  background-color: #f2f2f2 !important;
 
   &:hover {
     box-shadow: 2px 4px 10px rgba(184, 184, 184, 0.2);
