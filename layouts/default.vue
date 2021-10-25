@@ -21,13 +21,19 @@
         </h1>
         <ul class="d-none d-md-flex align-items-center">
           <li class="me-16">
-            <NuxtLink to="/#works" class="fw-medium text-uppercase"
-              >works</NuxtLink
+            <a
+              href="#"
+              class="fw-medium text-uppercase"
+              @click.prevent="toAnchor('works')"
+              >works</a
             >
           </li>
           <li class="me-16">
-            <NuxtLink to="/#articles" class="fw-medium text-uppercase"
-              >articles</NuxtLink
+            <a
+              href="#"
+              class="fw-medium text-uppercase"
+              @click.prevent="toAnchor('articles')"
+              >articles</a
             >
           </li>
           <li class="me-16">
@@ -170,17 +176,19 @@
         >
           <ul class="d-flex mb-8 mb-md-0">
             <li class="me-md-16 me-12 font-md-base font-s">
-              <NuxtLink
-                to="/#works"
+              <a
+                href="#"
                 class="hover--secondary fw-medium text-uppercase text-white"
-                >works</NuxtLink
+                @click.prevent="toAnchor('works')"
+                >works</a
               >
             </li>
             <li class="me-md-16 me-12 font-md-base font-s">
-              <NuxtLink
-                to="/#articles"
+              <a
+                href="#"
                 class="hover--secondary fw-medium text-uppercase text-white"
-                >articles</NuxtLink
+                @click.prevent="toAnchor('articles')"
+                >articles</a
               >
             </li>
             <li class="me-md-16 font-md-base font-s">
@@ -234,6 +242,9 @@ export default {
     window.addEventListener('scroll', handleScroll)
   },
   methods: {
+    toAnchor(anchor) {
+      location.href = `/#${anchor}`
+    },
     checkScrollPosition() {
       if (window.scrollY === 0) {
         this.isWindowTop = true
