@@ -21,35 +21,41 @@
         </h1>
         <ul class="d-none d-md-flex align-items-center">
           <li class="me-16">
-            <a class="fw-medium text-uppercase" href="#">works</a>
+            <NuxtLink to="/#works" class="fw-medium text-uppercase"
+              >works</NuxtLink
+            >
           </li>
           <li class="me-16">
-            <a class="fw-medium text-uppercase" href="#">articles</a>
+            <NuxtLink to="/#articles" class="fw-medium text-uppercase"
+              >articles</NuxtLink
+            >
           </li>
           <li class="me-16">
-            <a class="fw-medium text-uppercase" href="#">about</a>
+            <NuxtLink to="/about" class="fw-medium text-uppercase"
+              >about</NuxtLink
+            >
           </li>
           <li class="me-8">
-            <a href="#">
+            <a href="#" target="_blank">
               <img
                 :class="[
                   { 'icon--white': !isWindowTop },
                   'top-nav__social-media-icon',
                 ]"
                 src="images/5282542_linkedin_network_social network_linkedin logo_icon.svg"
-                alt=""
+                alt="linkedIn"
               />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://github.com/alysachan830" target="_blank">
               <img
                 :class="[
                   { 'icon--white': !isWindowTop },
                   'top-nav__social-media-icon',
                 ]"
                 src="images/317712_code repository_github_repository_resource_icon.svg"
-                alt=""
+                alt="github"
               />
             </a>
           </li>
@@ -99,7 +105,16 @@
     <div>
       <Nuxt />
       <footer class="bg-primary pt-20 pb-16">
-        <div class="row text-center text-white justify-content-center mb-18">
+        <div
+          class="
+            row
+            justify-content-center
+            text-center text-white
+            mb-18
+            w-100
+            mx-auto mx-md-0
+          "
+        >
           <div class="col-md-8">
             <p class="font-md-4xl font-xl fw-bold">Let's get in touch!</p>
             <p class="font-md-m font-s mb-md-18 mb-10">
@@ -111,6 +126,7 @@
                 <a
                   href="https://github.com/alysachan830"
                   class="d-flex align-items-center"
+                  target="_blank"
                 >
                   <img
                     class="social-media-icon icon--white me-4"
@@ -120,7 +136,7 @@
                 </a>
               </li>
               <li class="me-10 md-md-0 mb-10">
-                <a href="#" class="d-flex align-items-center">
+                <a href="#" class="d-flex align-items-center" target="_blank">
                   <img
                     class="social-media-icon icon--white me-4"
                     src="images/5282542_linkedin_network_social network_linkedin logo_icon.svg"
@@ -129,7 +145,10 @@
                 </a>
               </li>
               <li>
-                <a href="#" class="d-flex align-items-center">
+                <a
+                  href="mailto:alysachansl@gmail.com"
+                  class="d-flex align-items-center"
+                >
                   <img
                     class="social-media-icon icon--white me-4"
                     src="images/email_black_24dp.svg"
@@ -151,24 +170,24 @@
         >
           <ul class="d-flex mb-8 mb-md-0">
             <li class="me-md-16 me-12 font-md-base font-s">
-              <a
+              <NuxtLink
+                to="/#works"
                 class="hover--secondary fw-medium text-uppercase text-white"
-                href="#"
-                >works</a
+                >works</NuxtLink
               >
             </li>
             <li class="me-md-16 me-12 font-md-base font-s">
-              <a
+              <NuxtLink
+                to="/#articles"
                 class="hover--secondary fw-medium text-uppercase text-white"
-                href="#"
-                >articles</a
+                >articles</NuxtLink
               >
             </li>
-            <li class="me-md-16 me-12 font-md-base font-s">
-              <a
+            <li class="me-md-16 font-md-base font-s">
+              <NuxtLink
+                to="/about"
                 class="hover--secondary fw-medium text-uppercase text-white"
-                href="#"
-                >about</a
+                >about</NuxtLink
               >
             </li>
           </ul>
@@ -231,6 +250,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import '@/assets/stylesheets/all';
+
 .top-nav {
   height: 64px;
   &-wrap {
@@ -329,8 +350,8 @@ export default {
 
 .scroll-to-top-btn {
   transition: all 0.3s !important;
-  bottom: 50px;
-  right: 50px;
+  bottom: 25px;
+  right: 25px;
   background-color: #f2f2f2 !important;
 
   &:hover {

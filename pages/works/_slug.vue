@@ -7,7 +7,9 @@
           <h2 class="font-md-2xl font-xl">{{ page.title }}</h2>
         </div>
         <div class="col-md-4">
-          <a class="text-info text-end mb-8 mb-md-0 font-s" href="/#works"
+          <a
+            class="back-to-works-btn text-info text-end mb-8 mb-md-0 font-s"
+            href="/#works"
             >Back to works
             <span class="material-icons align-middle font-s">
               chevron_right
@@ -21,7 +23,7 @@
       class="cover-img mb-md-21 mb-20"
       :style="`background-image: url(${page.coverImg})`"
     ></div>
-    <div class="body">
+    <div class="markdown-body">
       <div class="container mb-md-21 mb-20">
         <div class="row justify-content-between mb-20 mb-md-0">
           <div class="col-md-7 mb-18 mb-md-0">
@@ -56,14 +58,16 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="content mb-18">
+          <div class="markdown-content work-content mb-18">
             <nuxt-content :document="page" />
           </div>
         </div>
       </div>
     </div>
     <div class="container mb-18">
-      <a class="text-info mb-8 mb-md-0 font-m text-end" href="/#works"
+      <a
+        class="back-to-works-btn text-info mb-8 mb-md-0 text-end"
+        href="/#works"
         >Back to works
         <span class="material-icons align-middle"> chevron_right </span>
       </a>
@@ -95,7 +99,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/assets/stylesheets/all';
+@import '@/assets/stylesheets/markdown-content/markdown-content';
 
 .cover-img {
   width: 100vw;
@@ -119,48 +123,21 @@ export default {
   }
 }
 
-.role,
-.content ul {
+.role ul {
   list-style-type: disc;
   list-style-position: inside;
 }
 
-.body {
-  line-height: 1.8;
-  @include media-breakpoint-up(md) {
-    font-size: 18px;
-  }
-  font-size: 16px;
-
-  h2 {
-    font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 32px;
-  }
-}
-
-.markdown-section {
-  margin-bottom: 92px;
-
-  @include media-breakpoint-up(md) {
-    margin-bottom: 192px;
-  }
-}
-
-.content {
+.work-content {
   p {
     width: 70%;
   }
-
-  p,
-  ul {
-    margin-bottom: 20px;
-  }
 }
 
-.caption {
-  color: $info;
-  font-size: 14px;
-  margin-bottom: 0.625rem;
+.back-to-works-btn {
+  transition: transform 0.4s;
+  &:hover {
+    transform: translateX(8px);
+  }
 }
 </style>
