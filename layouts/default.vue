@@ -106,7 +106,14 @@
       <Nuxt />
       <footer class="bg-primary pt-20 pb-16">
         <div
-          class="row text-center text-white justify-content-center mb-18 w-100"
+          class="
+            row
+            justify-content-center
+            text-center text-white
+            mb-18
+            w-100
+            mx-auto mx-md-0
+          "
         >
           <div class="col-md-8">
             <p class="font-md-4xl font-xl fw-bold">Let's get in touch!</p>
@@ -163,24 +170,24 @@
         >
           <ul class="d-flex mb-8 mb-md-0">
             <li class="me-md-16 me-12 font-md-base font-s">
-              <a
+              <NuxtLink
+                to="/#works"
                 class="hover--secondary fw-medium text-uppercase text-white"
-                href="#"
-                >works</a
+                >works</NuxtLink
               >
             </li>
             <li class="me-md-16 me-12 font-md-base font-s">
-              <a
+              <NuxtLink
+                to="/#articles"
                 class="hover--secondary fw-medium text-uppercase text-white"
-                href="#"
-                >articles</a
+                >articles</NuxtLink
               >
             </li>
-            <li class="me-md-16 me-12 font-md-base font-s">
-              <a
+            <li class="me-md-16 font-md-base font-s">
+              <NuxtLink
+                to="/about"
                 class="hover--secondary fw-medium text-uppercase text-white"
-                href="#"
-                >about</a
+                >about</NuxtLink
               >
             </li>
           </ul>
