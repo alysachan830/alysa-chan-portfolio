@@ -32,7 +32,7 @@
             </h2>
             <p>{{ page.description }}</p>
           </div>
-          <ul class="col-md-3">
+          <ul class="col-md-4">
             <li class="mb-10">
               <p class="fw-bold mb-3">URL</p>
               {{ page.url }}
@@ -102,7 +102,7 @@ export default {
 @import '@/assets/stylesheets/markdown-content/markdown-content';
 
 .cover-img {
-  width: 100vw;
+  width: 100%;
   height: 1280px;
   background-position: center center;
   background-size: cover;
