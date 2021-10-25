@@ -105,7 +105,9 @@
     <div>
       <Nuxt />
       <footer class="bg-primary pt-20 pb-16">
-        <div class="row text-center text-white justify-content-center mb-18">
+        <div
+          class="row text-center text-white justify-content-center mb-18 w-100"
+        >
           <div class="col-md-8">
             <p class="font-md-4xl font-xl fw-bold">Let's get in touch!</p>
             <p class="font-md-m font-s mb-md-18 mb-10">
@@ -241,6 +243,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import '@/assets/stylesheets/all';
+
 .top-nav {
   height: 64px;
   &-wrap {
@@ -339,8 +343,8 @@ export default {
 
 .scroll-to-top-btn {
   transition: all 0.3s !important;
-  bottom: 50px;
-  right: 50px;
+  bottom: 25px;
+  right: 25px;
   background-color: #f2f2f2 !important;
 
   &:hover {
