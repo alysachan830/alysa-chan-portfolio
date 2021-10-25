@@ -21,19 +21,13 @@
         </h1>
         <ul class="d-none d-md-flex align-items-center">
           <li class="me-16">
-            <a
-              href="#"
-              class="fw-medium text-uppercase"
-              @click.prevent="toAnchor('works')"
-              >works</a
+            <NuxtLink to="/#works" class="fw-medium text-uppercase"
+              >works</NuxtLink
             >
           </li>
           <li class="me-16">
-            <a
-              href="#"
-              class="fw-medium text-uppercase"
-              @click.prevent="toAnchor('articles')"
-              >articles</a
+            <NuxtLink to="/#articles" class="fw-medium text-uppercase"
+              >articles</NuxtLink
             >
           </li>
           <li class="me-16">
@@ -80,19 +74,19 @@
       <div v-show="showMenu" class="menu py-16 bg-primary d-md-none">
         <div class="container">
           <ul>
-            <li class="mb-4" @click.prevent="showMenu = false">
+            <li class="mb-4">
               <a
-                href="#"
+                href="/#works"
                 class="text-uppercase font-md-4xl font-3xl fw-bold text-white"
-                @click.prevent="clickMenuLink('works')"
+                @click="showMenu = false"
                 >Works</a
               >
             </li>
             <li class="mb-4">
               <a
-                href="#"
+                href="/#articles"
                 class="text-uppercase font-md-4xl font-3xl fw-bold text-white"
-                @click.prevent="clickMenuLink('articles')"
+                @click="showMenu = false"
                 >articles</a
               >
             </li>
@@ -177,19 +171,17 @@
         >
           <ul class="d-flex mb-8 mb-md-0">
             <li class="me-md-16 me-12 font-md-base font-s">
-              <a
-                href="#"
+              <NuxtLink
+                to="/#works"
                 class="hover--secondary fw-medium text-uppercase text-white"
-                @click.prevent="toAnchor('works')"
-                >works</a
+                >works</NuxtLink
               >
             </li>
             <li class="me-md-16 me-12 font-md-base font-s">
-              <a
-                href="#"
+              <NuxtLink
+                to="/#articles"
                 class="hover--secondary fw-medium text-uppercase text-white"
-                @click.prevent="toAnchor('articles')"
-                >articles</a
+                >articles</NuxtLink
               >
             </li>
             <li class="me-md-16 font-md-base font-s">
@@ -243,13 +235,6 @@ export default {
     window.addEventListener('scroll', handleScroll)
   },
   methods: {
-    toAnchor(anchor) {
-      location.href = `/#${anchor}`
-    },
-    clickMenuLink(anchor) {
-      this.showMenu = false
-      this.toAnchor(anchor)
-    },
     checkScrollPosition() {
       if (window.scrollY === 0) {
         this.isWindowTop = true
