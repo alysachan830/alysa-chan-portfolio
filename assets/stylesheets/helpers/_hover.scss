@@ -8,9 +8,17 @@
   }
 }
 
-.hover--secondary {
+.hover {
   transition: color 0.3s;
-  &:hover {
-    color: $secondary !important;
+
+  &--primary {
+    &:hover {
+      color: $primary !important;
+    }
+  }
+  &--secondary {
+    &:hover {
+      color: $secondary !important;
+    }
   }
 }

@@ -56,7 +56,7 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="markdown-content mb-18">
+          <div class="markdown-content work-content mb-18">
             <nuxt-content :document="page" />
           </div>
         </div>
@@ -122,5 +122,11 @@ export default {
 .role ul {
   list-style-type: disc;
   list-style-position: inside;
+}
+
+.work-content {
+  p {
+    width: 70%;
+  }
 }
 </style>
