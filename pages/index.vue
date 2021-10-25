@@ -125,11 +125,10 @@
               v-for="article in articleIntros"
               :key="article.title"
               class="article-card p-16 p-md-0 mb-6"
+              @click="toArticle(article.url)"
             >
-              <a
-                :href="article.url"
-                class="row justify-content-center py-md-18 py-0"
-                target="_blank"
+              <div
+                class="article-link row justify-content-center py-md-18 py-0"
               >
                 <div class="col-md-5 mb-16 mb-md-0">
                   <a href="#" class="mb-10">
@@ -139,13 +138,13 @@
                       alt=""
                     />
                   </a>
-                  <div>
+                  <span>
                     <p class="mb-2 text-info fw-bold">
                       {{ article.subTitle }}
                     </p>
                     <h3 class="mb-10 fw-bold">{{ article.title }}</h3>
                     <p class="text-info">{{ article.post }} articles</p>
-                  </div>
+                  </span>
                 </div>
                 <div class="col-md-5">
                   <p v-if="article.prize" class="text-primary font-s mb-6">
@@ -162,7 +161,7 @@
                     </span>
                   </span>
                 </div>
-              </a>
+              </div>
             </li>
           </ul>
         </div>
@@ -191,6 +190,11 @@ export default {
       workIntros,
       articleIntros,
     }
+  },
+  methods: {
+    toArticle(url) {
+      window.open(url)
+    },
   },
 }
 </script>
@@ -264,6 +268,7 @@ export default {
 
 .article-card {
   transition: box-shadow 0.2s;
+  cursor: pointer;
 
   &__icon {
     width: 100px;
