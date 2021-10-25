@@ -191,6 +191,12 @@ export default {
       articleIntros,
     }
   },
+  mounted() {
+    if (this.$nuxt.$route.hash !== '') {
+      const el = document.querySelector(this.$nuxt.$route.hash)
+      el.scrollIntoView()
+    }
+  },
   methods: {
     toArticle(url) {
       window.open(url)
