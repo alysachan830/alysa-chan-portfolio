@@ -194,7 +194,7 @@ export default {
   mounted() {
     if (this.$nuxt.$route.hash !== '') {
       const el = document.querySelector(this.$nuxt.$route.hash)
-      el.scrollIntoView()
+      el.scrollIntoView({ behavior: 'smooth' })
     }
   },
   methods: {
