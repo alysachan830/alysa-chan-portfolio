@@ -80,29 +80,30 @@
       <div v-show="showMenu" class="menu py-16 bg-primary d-md-none">
         <div class="container">
           <ul>
-            <li class="mb-4">
-              <NuxtLink
-                to="/#works"
+            <li class="mb-4" @click.prevent="showMenu = false">
+              <a
+                href="#"
                 class="text-uppercase font-md-4xl font-3xl fw-bold text-white"
+                @click.prevent="clickMenuLink('works')"
+                >Works</a
               >
-                Works
-              </NuxtLink>
             </li>
             <li class="mb-4">
-              <NuxtLink
-                to="/#articles"
+              <a
+                href="#"
                 class="text-uppercase font-md-4xl font-3xl fw-bold text-white"
+                @click.prevent="clickMenuLink('articles')"
+                >articles</a
               >
-                Articles
-              </NuxtLink>
             </li>
-            <li class="mb-4">
-              <NuxtLink
-                to="/about"
+            <li>
+              <a
+                href="/about"
                 class="text-uppercase font-md-4xl font-3xl fw-bold text-white"
+                @click="showMenu = false"
               >
                 About
-              </NuxtLink>
+              </a>
             </li>
           </ul>
         </div>
@@ -244,6 +245,10 @@ export default {
   methods: {
     toAnchor(anchor) {
       location.href = `/#${anchor}`
+    },
+    clickMenuLink(anchor) {
+      this.showMenu = false
+      this.toAnchor(anchor)
     },
     checkScrollPosition() {
       if (window.scrollY === 0) {
