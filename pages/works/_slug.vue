@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-21">
+  <div class="mt-20 mt-lg-21">
     <div class="container mb-16">
       <div class="row justify-content-between flex-column-reverse flex-md-row">
         <div class="col-md-8">
@@ -32,7 +32,7 @@
             </h2>
             <p>{{ page.description }}</p>
           </div>
-          <ul class="col-md-3">
+          <ul class="col-md-4">
             <li class="mb-10">
               <p class="fw-bold mb-3">URL</p>
               {{ page.url }}
@@ -102,13 +102,12 @@ export default {
 @import '@/assets/stylesheets/markdown-content/markdown-content';
 
 .cover-img {
-  width: 100vw;
-  height: 1280px;
+  width: 100%;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 
-  height: 397px;
+  height: 240px;
 
   @include media-breakpoint-up(md) {
     height: 532px;

@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-21 mb-21 markdown-body">
+  <div class="mt-20 mt-lg-21 mb-21 markdown-body">
     <div class="container">
       <h2 class="fw-bold font-2xl mb-20 text-uppercase">About me</h2>
       <div class="row flex-column-reverse flex-md-row">
