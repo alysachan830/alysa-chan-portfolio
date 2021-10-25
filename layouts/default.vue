@@ -21,35 +21,41 @@
         </h1>
         <ul class="d-none d-md-flex align-items-center">
           <li class="me-16">
-            <a class="fw-medium text-uppercase" href="#">works</a>
+            <NuxtLink to="/#works" class="fw-medium text-uppercase"
+              >works</NuxtLink
+            >
           </li>
           <li class="me-16">
-            <a class="fw-medium text-uppercase" href="#">articles</a>
+            <NuxtLink to="/#articles" class="fw-medium text-uppercase"
+              >articles</NuxtLink
+            >
           </li>
           <li class="me-16">
-            <a class="fw-medium text-uppercase" href="#">about</a>
+            <NuxtLink to="/about" class="fw-medium text-uppercase"
+              >about</NuxtLink
+            >
           </li>
           <li class="me-8">
-            <a href="#">
+            <a href="#" target="_blank">
               <img
                 :class="[
                   { 'icon--white': !isWindowTop },
                   'top-nav__social-media-icon',
                 ]"
                 src="images/5282542_linkedin_network_social network_linkedin logo_icon.svg"
-                alt=""
+                alt="linkedIn"
               />
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="https://github.com/alysachan830" target="_blank">
               <img
                 :class="[
                   { 'icon--white': !isWindowTop },
                   'top-nav__social-media-icon',
                 ]"
                 src="images/317712_code repository_github_repository_resource_icon.svg"
-                alt=""
+                alt="github"
               />
             </a>
           </li>
@@ -111,6 +117,7 @@
                 <a
                   href="https://github.com/alysachan830"
                   class="d-flex align-items-center"
+                  target="_blank"
                 >
                   <img
                     class="social-media-icon icon--white me-4"
@@ -120,7 +127,7 @@
                 </a>
               </li>
               <li class="me-10 md-md-0 mb-10">
-                <a href="#" class="d-flex align-items-center">
+                <a href="#" class="d-flex align-items-center" target="_blank">
                   <img
                     class="social-media-icon icon--white me-4"
                     src="images/5282542_linkedin_network_social network_linkedin logo_icon.svg"
@@ -129,7 +136,10 @@
                 </a>
               </li>
               <li>
-                <a href="#" class="d-flex align-items-center">
+                <a
+                  href="mailto:alysachansl@gmail.com"
+                  class="d-flex align-items-center"
+                >
                   <img
                     class="social-media-icon icon--white me-4"
                     src="images/email_black_24dp.svg"

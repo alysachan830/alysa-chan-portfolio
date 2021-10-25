@@ -22,20 +22,20 @@
           </h3>
           <ul class="d-flex justify-content-center mb-md-18 mb-12">
             <li class="me-10">
-              <a href="#">
+              <a href="#" target="_blank">
                 <img
                   class="icon--l"
                   src="images/5282542_linkedin_network_social network_linkedin logo_icon.svg"
-                  alt=""
+                  alt="linkedIn"
                 />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://github.com/alysachan830" target="_blank">
                 <img
                   class="icon--l"
                   src="images/317712_code repository_github_repository_resource_icon.svg"
-                  alt=""
+                  alt="github"
                 />
               </a>
             </li>
@@ -103,7 +103,7 @@
           </li>
         </ul>
       </section>
-      <section class="info-bg">
+      <section id="articles" class="info-bg">
         <div class="container py-20">
           <h2 class="fw-bold font-2xl mb-20 text-uppercase">Articles</h2>
           <ul>

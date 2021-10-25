@@ -24,7 +24,7 @@
         <ul>
           <li class="mb-8">
             <a
-              href="mailto:alysachansl@gmail.om"
+              href="mailto:alysachansl@gmail.com"
               class="d-flex align-items-center hover--primary"
             >
               <img class="me-8" src="images/email_black_24dp.svg" alt="email" />
@@ -32,7 +32,11 @@
             </a>
           </li>
           <li class="mb-8">
-            <a href="#" class="d-flex align-items-center hover--primary">
+            <a
+              href="#"
+              class="d-flex align-items-center hover--primary"
+              target="_blank"
+            >
               <img
                 class="me-8"
                 src="images/5282542_linkedin_network_social network_linkedin logo_icon.svg"
@@ -45,6 +49,7 @@
             <a
               href="https://github.com/alysachan830"
               class="d-flex align-items-center hover--primary"
+              target="_blank"
             >
               <img
                 class="me-8"
