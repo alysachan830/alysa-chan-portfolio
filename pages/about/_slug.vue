@@ -2,21 +2,25 @@
   <div class="mt-20 mt-lg-21 mb-21 markdown-body">
     <div class="container">
       <h2 class="fw-bold font-2xl mb-20 text-uppercase">About me</h2>
-      <div class="row flex-column-reverse flex-md-row">
-        <div class="markdown-content col-md-8">
+      <div
+        class="row flex-column-reverse flex-lg-row justify-content-lg-between"
+      >
+        <div class="markdown-content col-lg-7">
           <nuxt-content :document="page" />
         </div>
         <div
           class="
-            mb-16 mb-md-0
-            col-md-4
+            mb-16 mb-lg-0
+            col-lg-4
             d-flex
-            justify-content-center justify-content-md-end
+            justify-content-center justify-content-lg-end
           "
         >
-          <div class="profile-img-wrap">
-            <div class="profile-img"></div>
-          </div>
+          <img
+            class="profile-img"
+            src="/images/profile_pic.jpg"
+            alt="profile image"
+          />
         </div>
       </div>
       <div class="contact">
@@ -86,10 +90,6 @@ export default {
 @import '@/assets/stylesheets/all.scss';
 
 .profile-img {
-  background-image: url('/images/profile_pic.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 240px;
   height: 240px;
   border-radius: 50%;
 }
