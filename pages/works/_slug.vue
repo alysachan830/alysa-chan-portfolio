@@ -130,7 +130,9 @@ export default {
 
 .work-content {
   p {
-    width: 70%;
+    @include media-breakpoint-up(md) {
+      width: 70%;
+    }
   }
 }
 

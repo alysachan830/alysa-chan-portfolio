@@ -76,24 +76,24 @@
           <ul>
             <li class="mb-4">
               <NuxtLink
-                to="#"
-                class="text-uppercase font-4xl fw-bold text-white"
+                to="/#works"
+                class="text-uppercase font-md-4xl font-3xl fw-bold text-white"
               >
                 Works
               </NuxtLink>
             </li>
             <li class="mb-4">
               <NuxtLink
-                to="#"
-                class="text-uppercase font-4xl fw-bold text-white"
+                to="/#articles"
+                class="text-uppercase font-md-4xl font-3xl fw-bold text-white"
               >
                 Articles
               </NuxtLink>
             </li>
             <li class="mb-4">
               <NuxtLink
-                to="#"
-                class="text-uppercase font-4xl fw-bold text-white"
+                to="/about"
+                class="text-uppercase font-md-4xl font-3xl fw-bold text-white"
               >
                 About
               </NuxtLink>
