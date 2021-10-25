@@ -7,7 +7,9 @@
           <h2 class="font-md-2xl font-xl">{{ page.title }}</h2>
         </div>
         <div class="col-md-4">
-          <a class="text-info text-end mb-8 mb-md-0 font-s" href="/#works"
+          <a
+            class="back-to-works-btn text-info text-end mb-8 mb-md-0 font-s"
+            href="/#works"
             >Back to works
             <span class="material-icons align-middle font-s">
               chevron_right
@@ -63,7 +65,9 @@
       </div>
     </div>
     <div class="container mb-18">
-      <a class="text-info mb-8 mb-md-0 font-m text-end" href="/#works"
+      <a
+        class="back-to-works-btn text-info mb-8 mb-md-0 text-end"
+        href="/#works"
         >Back to works
         <span class="material-icons align-middle"> chevron_right </span>
       </a>
@@ -127,6 +131,13 @@ export default {
 .work-content {
   p {
     width: 70%;
+  }
+}
+
+.back-to-works-btn {
+  transition: transform 0.4s;
+  &:hover {
+    transform: translateX(8px);
   }
 }
 </style>
