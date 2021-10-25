@@ -49,11 +49,8 @@
       </div>
     </div>
     <div>
-      <section class="mb-20 container">
-        <h2
-          id="works"
-          class="fw-bold font-md-2xl font-xl mb-18 mb-md-20 text-uppercase"
-        >
+      <section id="works" class="mb-20 container">
+        <h2 class="fw-bold font-md-2xl font-xl mb-18 mb-md-20 text-uppercase">
           Works
         </h2>
         <ul>
