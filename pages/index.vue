@@ -62,13 +62,13 @@
                 <img :src="work.imageUrl" :alt="work.title" />
               </div>
             </NuxtLink>
-            <div class="col-md-4">
+            <div class="work col-md-4">
               <NuxtLink :to="`/works/${work.path}`" class="mb-14">
                 <span class="mb-3 d-block"> {{ work.year }} </span>
                 <span class="mb-1 d-block font-l fw-medium">{{
                   work.title
                 }}</span>
-                <ul class="d-flex text-info font-s">
+                <ul class="d-flex text-info">
                   <li
                     v-for="skill in work.technologies"
                     :key="skill"
@@ -77,6 +77,13 @@
                     {{ skill }}
                   </li>
                 </ul>
+              </NuxtLink>
+              <NuxtLink
+                :to="`/works/${work.path}`"
+                class="work__read-more mb-12 font-s"
+              >
+                Read more
+                <span class="material-icons align-middle"> chevron_right </span>
               </NuxtLink>
               <div class="d-flex">
                 <a
@@ -141,7 +148,7 @@
                   <p class="mb-16 font-s font-md-base">
                     {{ article.description }}
                   </p>
-                  <span class="text-primary text-end d-block article-card__link"
+                  <span class="text-end d-block article-card__link"
                     >Read more
                     <span class="material-icons align-middle">
                       chevron_right
@@ -234,6 +241,17 @@ export default {
   &--l {
     width: 30px;
     height: 30px;
+  }
+}
+
+.work {
+  &__read-more {
+    transition: transform 0.4s;
+  }
+  &:hover {
+    .work__read-more {
+      transform: translateX(8px);
+    }
   }
 }
 

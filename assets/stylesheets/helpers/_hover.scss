@@ -9,7 +9,7 @@
 }
 
 .hover {
-  transition: color 0.3s;
+  transition: color 0.3s, transform 0.3s;
 
   &--primary {
     &:hover {
