@@ -68,7 +68,7 @@
                 <span class="mb-1 d-block font-l fw-medium">{{
                   work.title
                 }}</span>
-                <ul class="d-flex text-info">
+                <ul class="d-flex flex-wrap text-info">
                   <li
                     v-for="skill in work.technologies"
                     :key="skill"
@@ -80,7 +80,7 @@
               </NuxtLink>
               <NuxtLink
                 :to="`/works/${work.path}`"
-                class="work__read-more mb-12 font-s"
+                class="work__read-more mb-lg-12 mb-8 font-s"
               >
                 Read more
                 <span class="material-icons align-middle"> chevron_right </span>
