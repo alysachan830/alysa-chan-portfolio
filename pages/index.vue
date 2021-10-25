@@ -50,7 +50,12 @@
     </div>
     <div>
       <section class="mb-20 container">
-        <h2 id="works" class="fw-bold font-2xl mb-20 text-uppercase">Works</h2>
+        <h2
+          id="works"
+          class="fw-bold font-md-2xl font-xl mb-18 mb-md-20 text-uppercase"
+        >
+          Works
+        </h2>
         <ul>
           <li
             v-for="work in workIntros"
@@ -112,7 +117,9 @@
       </section>
       <section id="articles" class="info-bg">
         <div class="container py-20">
-          <h2 class="fw-bold font-2xl mb-20 text-uppercase">Articles</h2>
+          <h2 class="fw-bold font-md-2xl font-xl mb-18 mb-md-20 text-uppercase">
+            Articles
+          </h2>
           <ul>
             <li
               v-for="article in articleIntros"
@@ -209,7 +216,7 @@ export default {
   &-wrap {
     // Nav bar is 64px height
     margin-top: 64px;
-    height: 60vh;
+    height: calc(100vh - 64px);
     @include media-breakpoint-up(md) {
       height: 60vh;
     }
