@@ -5,6 +5,7 @@ coverImg: /images/deluxury_cover.jpg
 url: https://www.deluxury.com.hk/
 role: Web design
 technologies: Adobe Illustrator, Adobe Photoshop
+sourceCode: null
 description: Website design for Deluxury HK's e-commerce website. As a designer in a digital marketing company, I was responsible for redesigning the whole website through proposing different art directions and executing the design for the client.
 ---
 

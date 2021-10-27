@@ -5,6 +5,7 @@ coverImg: /images/marugo-mock-up.jpg
 url: Working in progress
 role: Front-end development, Planning SQL database on ER digram and writing API doc for back-end developer, UI/UX design
 technologies: Vue.js, Express.js, Redis, Adobe XD
+sourceCode: null
 description: Marugo Class Web Application and its LINE Chatbot aim for improving
   teaching and learning experiences of tutorial classes in Taiwan.
   While web application has a complete set of features for students
@@ -137,7 +138,7 @@ My role
 </section>
 
 <section class="mb-20">
-    <span class="caption">LINE chatbot features</span>
+    <span class="caption">ER diagram for Web App and LINE Chatbot</span>
     <img src="/images/LIFF-APP---ER-diagram---0616.jpg">
 </section>
 

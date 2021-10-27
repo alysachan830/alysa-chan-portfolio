@@ -35,7 +35,15 @@
           <ul class="col-md-4">
             <li class="mb-10">
               <p class="fw-bold mb-3">URL</p>
-              {{ page.url }}
+              <a
+                v-if="/^https/.test(page.url)"
+                :href="page.url"
+                class="hover--primary"
+                target="_blank"
+              >
+                {{ page.url }}
+              </a>
+              <span v-else> {{ page.url }} </span>
             </li>
             <li class="mb-10">
               <p class="fw-bold mb-3">My role</p>
@@ -49,9 +57,25 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="mb-10">
               <p class="fw-bold mb-3">Technologies</p>
               {{ page.technologies }}
+            </li>
+            <li>
+              <p class="fw-bold mb-3">Source code</p>
+              <a
+                v-if="page.sourceCode"
+                :href="page.sourceCode"
+                class="me-8"
+                target="_blank"
+              >
+                <img
+                  class="icon"
+                  src="/images/317712_code repository_github_repository_resource_icon.svg"
+                  alt="github"
+                />
+              </a>
+              <span v-else> - </span>
             </li>
           </ul>
         </div>
@@ -120,6 +144,10 @@ export default {
   @include media-breakpoint-up(xxl) {
     height: 1280px;
   }
+}
+
+.icon {
+  width: 24px;
 }
 
 .role ul {
