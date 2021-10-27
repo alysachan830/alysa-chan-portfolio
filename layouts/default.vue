@@ -36,10 +36,7 @@
             >
           </li>
           <li class="me-8">
-            <a
-              href="https://linkedin.com/in/alysa-chan-41a729224"
-              target="_blank"
-            >
+            <a href="https://www.linkedin.com/in/alysa-chan" target="_blank">
               <img
                 :class="[
                   { 'icon--white': !isWindowTop },
@@ -141,7 +138,7 @@
               </li>
               <li class="me-10 md-md-0 mb-10">
                 <a
-                  href="https://linkedin.com/in/alysa-chan-41a729224"
+                  href="https://www.linkedin.com/in/alysa-chan"
                   class="d-flex align-items-center"
                   target="_blank"
                 >
