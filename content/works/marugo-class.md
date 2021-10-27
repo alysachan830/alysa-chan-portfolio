@@ -2,7 +2,7 @@
 title: Marugo Class Web App & LINE Chatbot
 year: 2021
 coverImg: /images/marugo-mock-up.jpg
-url: Working in progress
+url: Work in progress
 role: Front-end development, Planning SQL database on ER digram and writing API doc for back-end developer, UI/UX design
 technologies: Vue.js, Express.js, Redis, Adobe XD
 sourceCode: null
