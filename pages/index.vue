@@ -74,7 +74,7 @@
                   <li
                     v-for="skill in work.technologies"
                     :key="skill"
-                    class="me-5"
+                    class="me-5 font-s font-lg-base"
                   >
                     {{ skill }}
                   </li>
