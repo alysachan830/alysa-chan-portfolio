@@ -4,7 +4,7 @@ year: 2021
 coverImg: /images/marugo-mock-up.jpg
 url: Working in progress
 role: Front-end development, Planning SQL database on ER digram and writing API doc for back-end developer, UI/UX design
-technologies: Vue.js, Express.js, Adobe XD
+technologies: Vue.js, Express.js, Redis, Adobe XD
 description: Marugo Class Web Application and its LINE Chatbot aim for improving
   teaching and learning experiences of tutorial classes in Taiwan.
   While web application has a complete set of features for students

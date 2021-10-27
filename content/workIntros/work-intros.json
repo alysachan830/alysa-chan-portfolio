@@ -3,7 +3,7 @@
     {
       "title": "Marugo Class Web App & LINE Chatbot",
       "year": 2021,
-      "technologies": ["Vue.js", "Express.js", "Bootstrap 5"],
+      "technologies": ["Vue.js", "Express.js", "Redis", "Bootstrap 5"],
       "imageUrl": "/images/work-intro_marugo-mock-up.jpg",
       "sourceCode": null,
       "url": null,
