@@ -5,6 +5,7 @@ coverImg: /images/flash_ticketing_mockup.jpg
 url: https://flash-ticketing.com/
 role: Front-end development, UI/UX design
 technologies: Nuxt.js, Adobe XD
+sourceCode: https://github.com/alysachan830/flash-ticketing
 description: Flash ticketing is an online ticketing platform for art and cultural events. It is my project outcome of my study in an online Vue.js bootcamp. I worked on UI/UX design and front-end with Nuxt.js, for developing a server-side rendering (SSR) website. The goal is to enhance my front-end development skills with Nuxt.js and understand how e-commerce website works basically.
 ---
 
