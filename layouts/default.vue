@@ -36,7 +36,10 @@
             >
           </li>
           <li class="me-8">
-            <a href="#" target="_blank">
+            <a
+              href="https://linkedin.com/in/alysa-chan-41a729224"
+              target="_blank"
+            >
               <img
                 :class="[
                   { 'icon--white': !isWindowTop },
@@ -137,7 +140,11 @@
                 </a>
               </li>
               <li class="me-10 md-md-0 mb-10">
-                <a href="#" class="d-flex align-items-center" target="_blank">
+                <a
+                  href="https://linkedin.com/in/alysa-chan-41a729224"
+                  class="d-flex align-items-center"
+                  target="_blank"
+                >
                   <img
                     class="social-media-icon icon--white me-4"
                     src="images/5282542_linkedin_network_social network_linkedin logo_icon.svg"
