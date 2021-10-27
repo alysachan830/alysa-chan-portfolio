@@ -37,7 +37,7 @@
           </li>
           <li class="mb-8">
             <a
-              href="#"
+              href="https://linkedin.com/in/alysa-chan-41a729224"
               class="d-flex align-items-center hover--primary"
               target="_blank"
             >
