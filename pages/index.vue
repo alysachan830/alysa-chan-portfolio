@@ -22,10 +22,7 @@
           </h3>
           <ul class="d-flex justify-content-center mb-md-18 mb-12">
             <li class="me-10">
-              <a
-                href="https://linkedin.com/in/alysa-chan-41a729224"
-                target="_blank"
-              >
+              <a href="https://www.linkedin.com/in/alysa-chan" target="_blank">
                 <img
                   class="icon--l"
                   src="images/5282542_linkedin_network_social network_linkedin logo_icon.svg"
