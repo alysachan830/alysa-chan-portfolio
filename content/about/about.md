@@ -26,7 +26,7 @@ JavaScript, Vue.js, Nuxt.js, Node.js, Express.js, SCSS, Git
 ### Aug 2020 — Now
 
 - Freelance
-- Designer / front-end developer
+- Front-end developer / Designer
 
 ### Dec 2019 — Aug 2020
 
