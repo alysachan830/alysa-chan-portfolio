@@ -137,7 +137,7 @@ My role
 </section>
 
 <section class="mb-20">
-    <span class="caption">LINE chatbot features</span>
+    <span class="caption">ER diagram for Web App and LINE Chatbot</span>
     <img src="/images/LIFF-APP---ER-diagram---0616.jpg">
 </section>
 
