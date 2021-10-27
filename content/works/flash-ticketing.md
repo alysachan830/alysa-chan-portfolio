@@ -2,7 +2,7 @@
 title: Flash Ticketing
 year: 2021
 coverImg: /images/flash_ticketing_mockup.jpg
-url: https://flash-ticketing.herokuapp.com/
+url: https://flash-ticketing.com/
 role: Front-end development, UI/UX design
 technologies: Nuxt.js, Adobe XD
 description: Flash ticketing is a personal project which imitates an online ticketing platform for art and cultural events during my study in an online Vue.js bootcamp. I worked on front-end development with Nuxt.js and UI/UX design of the website. The goal is mainly for enhancing my front-end development skills with Nuxt.js and understanding how an online e-commerce or ticketing platform works basically.

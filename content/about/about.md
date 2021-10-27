@@ -57,7 +57,7 @@ JavaScript, Vue.js, Nuxt.js, Node.js, Express.js, SCSS, Git
 ### 2015 — 2019
 
 - Hong Kong Baptist University
-- (BA) Visual Arts, Academy of Visual Arts
+- Bachelor of Arts (Honours) in Visual Arts
 
 </section>
 
