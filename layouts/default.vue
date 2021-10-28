@@ -21,17 +21,32 @@
         </h1>
         <ul class="d-none d-md-flex align-items-center">
           <li class="me-16">
-            <NuxtLink to="/#works" class="fw-medium text-uppercase"
+            <NuxtLink
+              to="/#works"
+              :class="[
+                isWindowTop ? 'hover--primary' : 'hover--secondary',
+                'hover fw-medium text-uppercase',
+              ]"
               >works</NuxtLink
             >
           </li>
           <li class="me-16">
-            <NuxtLink to="/#articles" class="fw-medium text-uppercase"
+            <NuxtLink
+              to="/#articles"
+              :class="[
+                isWindowTop ? 'hover--primary' : 'hover--secondary',
+                'hover fw-medium text-uppercase',
+              ]"
               >articles</NuxtLink
             >
           </li>
           <li class="me-16">
-            <NuxtLink to="/about" class="fw-medium text-uppercase"
+            <NuxtLink
+              to="/about"
+              :class="[
+                isWindowTop ? 'hover--primary' : 'hover--secondary',
+                'hover fw-medium text-uppercase',
+              ]"
               >about</NuxtLink
             >
           </li>
@@ -177,21 +192,33 @@
             <li class="me-md-16 me-12 font-md-base font-s">
               <NuxtLink
                 to="/#works"
-                class="hover--secondary fw-medium text-uppercase text-white"
+                class="
+                  hover hover--secondary
+                  fw-medium
+                  text-uppercase text-white
+                "
                 >works</NuxtLink
               >
             </li>
             <li class="me-md-16 me-12 font-md-base font-s">
               <NuxtLink
                 to="/#articles"
-                class="hover--secondary fw-medium text-uppercase text-white"
+                class="
+                  hover hover--secondary
+                  fw-medium
+                  text-uppercase text-white
+                "
                 >articles</NuxtLink
               >
             </li>
             <li class="me-md-16 font-md-base font-s">
               <NuxtLink
                 to="/about"
-                class="hover--secondary fw-medium text-uppercase text-white"
+                class="
+                  hover hover--secondary
+                  fw-medium
+                  text-uppercase text-white
+                "
                 >about</NuxtLink
               >
             </li>
@@ -206,7 +233,9 @@
               src="images/317712_code repository_github_repository_resource_icon.svg"
               alt="github"
             />
-            <span class="hover--secondary">Developed by Alysa Chan</span></a
+            <span class="hover hover--secondary"
+              >Developed by Alysa Chan</span
+            ></a
           >
           <p class="font-xs text-white">2021 © Alysa Chan</p>
         </nav>
