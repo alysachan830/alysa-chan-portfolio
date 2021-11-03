@@ -225,7 +225,7 @@ export default {
     margin-top: 64px;
     height: calc(100vh - 64px);
     @include media-breakpoint-up(md) {
-      height: 60vh;
+      height: 70vh;
     }
   }
 
