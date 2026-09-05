@@ -16,12 +16,6 @@
         </h1>
         <ul class="d-none d-md-flex align-items-center">
           <li class="me-16">
-            <NuxtLink to="/#works" class="hover hover--primary fw-medium text-uppercase">works</NuxtLink>
-          </li>
-          <li class="me-16">
-            <NuxtLink to="/#articles" class="hover hover--primary fw-medium text-uppercase">articles</NuxtLink>
-          </li>
-          <li class="me-16">
             <NuxtLink to="/about" class="hover hover--primary fw-medium text-uppercase">about</NuxtLink>
           </li>
           <li class="me-8">
@@ -56,22 +50,6 @@
       <div v-show="showMenu" class="menu py-16 bg-primary d-md-none">
         <div class="container">
           <ul>
-            <li class="mb-4">
-              <a
-                href="/#works"
-                class="text-uppercase font-md-4xl font-3xl fw-bold text-white"
-                @click="showMenu = false"
-                >Works</a
-              >
-            </li>
-            <li class="mb-4">
-              <a
-                href="/#articles"
-                class="text-uppercase font-md-4xl font-3xl fw-bold text-white"
-                @click="showMenu = false"
-                >articles</a
-              >
-            </li>
             <li>
               <a
                 href="/about"
