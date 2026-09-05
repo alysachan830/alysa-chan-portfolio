@@ -1,9 +1,27 @@
 {
   "workIntros": [
     {
+      "title": "Moovup Recruitment Services site",
+      "year": 2025,
+      "technologies": ["Web development"],
+      "imageUrl": "/images/moovup-site-cover.png",
+      "sourceCode": null,
+      "url": "https://moovup.com/hk/employer/recruitment-services/",
+      "path": "moovup-recruitment-services"
+    },
+    {
+      "title": "Moovup Job Fair Website",
+      "year": 2022,
+      "technologies": ["Web development"],
+      "imageUrl": "/images/moovup-job-fair-homepage.png",
+      "sourceCode": null,
+      "url": null,
+      "path": "moovup-job-fair"
+    },
+    {
       "title": "Marugo Class Web App & LINE Chatbot",
       "year": 2021,
-      "technologies": ["Vue.js", "Express.js", "Redis", "Bootstrap 5"],
+      "technologies": ["Vue.js", "Express.js", "Redis", "Bootstrap 5", "(Web development and web design)"],
       "imageUrl": "/images/work-intro_marugo-mock-up.jpg",
       "sourceCode": null,
       "url": null,
@@ -12,10 +30,10 @@
     {
       "title": "Flash Ticketing",
       "year": 2021,
-      "technologies": ["Nuxt.js", "Bootstrap 5"],
+      "technologies": ["Nuxt.js", "Bootstrap 5", "(Web development and web design)"],
       "imageUrl": "/images/work-intro_flash_ticketing_mock_up.jpg",
       "sourceCode": "https://github.com/alysachan830/flash-ticketing",
-      "url": "https://flash-ticketing.com/",
+      "url": "https://flash-ticketing.vercel.app/",
       "path": "flash-ticketing"
     },
     {
@@ -24,7 +42,7 @@
       "technologies": ["Web design"],
       "imageUrl": "/images/work-intro_deluxury_cover.jpg",
       "sourceCode": null,
-      "url": "https://www.deluxury.com.hk/",
+      "url": null,
       "path": "deluxury"
     }
   ]

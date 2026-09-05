@@ -2,7 +2,7 @@
 title: Flash Ticketing
 year: 2021
 coverImg: /images/flash_ticketing_mockup.jpg
-url: https://flash-ticketing.com/
+url: https://flash-ticketing.vercel.app/
 role: Front-end development, UI/UX design
 technologies: Nuxt.js, Adobe XD
 sourceCode: https://github.com/alysachan830/flash-ticketing

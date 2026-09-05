@@ -2,7 +2,7 @@
 title: Deluxury HK Web Design
 year: 2020
 coverImg: /images/deluxury_cover.jpg
-url: https://www.deluxury.com.hk/
+url: null
 role: Web design
 technologies: Adobe Illustrator, Adobe Photoshop
 sourceCode: null

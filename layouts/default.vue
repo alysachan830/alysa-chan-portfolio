@@ -1,11 +1,6 @@
 <template>
   <div>
-    <div
-      :class="[
-        { 'bg-primary text-white': !isWindowTop || showMenu },
-        'fixed-top top-nav-wrap',
-      ]"
-    >
+    <div class="top-nav-wrap">
       <nav
         class="
           top-nav
@@ -21,42 +16,18 @@
         </h1>
         <ul class="d-none d-md-flex align-items-center">
           <li class="me-16">
-            <NuxtLink
-              to="/#works"
-              :class="[
-                isWindowTop ? 'hover--primary' : 'hover--secondary',
-                'hover fw-medium text-uppercase',
-              ]"
-              >works</NuxtLink
-            >
+            <NuxtLink to="/#works" class="hover hover--primary fw-medium text-uppercase">works</NuxtLink>
           </li>
           <li class="me-16">
-            <NuxtLink
-              to="/#articles"
-              :class="[
-                isWindowTop ? 'hover--primary' : 'hover--secondary',
-                'hover fw-medium text-uppercase',
-              ]"
-              >articles</NuxtLink
-            >
+            <NuxtLink to="/#articles" class="hover hover--primary fw-medium text-uppercase">articles</NuxtLink>
           </li>
           <li class="me-16">
-            <NuxtLink
-              to="/about"
-              :class="[
-                isWindowTop ? 'hover--primary' : 'hover--secondary',
-                'hover fw-medium text-uppercase',
-              ]"
-              >about</NuxtLink
-            >
+            <NuxtLink to="/about" class="hover hover--primary fw-medium text-uppercase">about</NuxtLink>
           </li>
           <li class="me-8">
             <a href="https://www.linkedin.com/in/alysa-chan" target="_blank">
               <img
-                :class="[
-                  { 'icon--white': !isWindowTop },
-                  'top-nav__social-media-icon',
-                ]"
+                class="top-nav__social-media-icon"
                 src="images/5282542_linkedin_network_social network_linkedin logo_icon.svg"
                 alt="linkedIn"
               />
@@ -65,10 +36,7 @@
           <li>
             <a href="https://github.com/alysachan830" target="_blank">
               <img
-                :class="[
-                  { 'icon--white': !isWindowTop },
-                  'top-nav__social-media-icon',
-                ]"
+                class="top-nav__social-media-icon"
                 src="images/317712_code repository_github_repository_resource_icon.svg"
                 alt="github"
               />
@@ -78,7 +46,6 @@
         <button
           :class="[
             { 'top-nav-toggle--cross': showMenu },
-            { 'border-white top-nav-toggle--white': !isWindowTop || showMenu },
             'top-nav-toggle d-md-none',
           ]"
           @click="showMenu = !showMenu"
@@ -120,126 +87,6 @@
     </transition>
     <div>
       <Nuxt />
-      <footer class="bg-primary pt-20 pb-16">
-        <div
-          class="
-            row
-            justify-content-center
-            text-center text-white
-            mb-18
-            w-100
-            mx-auto mx-md-0
-          "
-        >
-          <div class="col-md-8">
-            <p class="font-md-4xl font-xl fw-bold">Let's get in touch!</p>
-            <p class="font-md-m font-s mb-md-18 mb-10">
-              I’m currently looking for a full-time junior front-end developer
-              job position in Hong Kong.
-            </p>
-            <ul class="d-inline-block d-flex justify-content-center">
-              <li class="me-10 md-md-0 mb-10">
-                <a
-                  href="https://github.com/alysachan830"
-                  class="d-flex align-items-center"
-                  target="_blank"
-                >
-                  <img
-                    class="social-media-icon icon--white me-4"
-                    src="images/317712_code repository_github_repository_resource_icon.svg"
-                    alt="github"
-                  />
-                </a>
-              </li>
-              <li class="me-10 md-md-0 mb-10">
-                <a
-                  href="https://www.linkedin.com/in/alysa-chan"
-                  class="d-flex align-items-center"
-                  target="_blank"
-                >
-                  <img
-                    class="social-media-icon icon--white me-4"
-                    src="images/5282542_linkedin_network_social network_linkedin logo_icon.svg"
-                    alt="linkedin"
-                  />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="mailto:alysachansl@gmail.com"
-                  class="d-flex align-items-center"
-                >
-                  <img
-                    class="social-media-icon icon--white me-4"
-                    src="images/email_black_24dp.svg"
-                    alt="email"
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <nav
-          class="
-            container
-            d-flex
-            flex-md-row flex-column
-            justify-content-between
-            align-items-center
-          "
-        >
-          <ul class="d-flex mb-8 mb-md-0">
-            <li class="me-md-16 me-12 font-md-base font-s">
-              <NuxtLink
-                to="/#works"
-                class="
-                  hover hover--secondary
-                  fw-medium
-                  text-uppercase text-white
-                "
-                >works</NuxtLink
-              >
-            </li>
-            <li class="me-md-16 me-12 font-md-base font-s">
-              <NuxtLink
-                to="/#articles"
-                class="
-                  hover hover--secondary
-                  fw-medium
-                  text-uppercase text-white
-                "
-                >articles</NuxtLink
-              >
-            </li>
-            <li class="me-md-16 font-md-base font-s">
-              <NuxtLink
-                to="/about"
-                class="
-                  hover hover--secondary
-                  fw-medium
-                  text-uppercase text-white
-                "
-                >about</NuxtLink
-              >
-            </li>
-          </ul>
-          <a
-            href="https://github.com/alysachan830/alysa-chan-portfolio"
-            class="d-flex align-items-center font-s text-white"
-            target="_blank"
-          >
-            <img
-              class="footer-icon icon--white me-3 d-none d-md-block"
-              src="images/317712_code repository_github_repository_resource_icon.svg"
-              alt="github"
-            />
-            <span class="hover hover--secondary"
-              >Developed by Alysa Chan</span
-            ></a
-          >
-          <p class="font-xs text-white">2021 © Alysa Chan</p>
-        </nav>
-      </footer>
       <transition name="fade">
         <button
           v-show="!isWindowTop"
@@ -254,27 +101,13 @@
 </template>
 
 <script>
-import debounce from 'lodash/debounce'
-
 export default {
   data() {
     return {
-      isWindowTop: true,
       showMenu: false,
     }
   },
-  mounted() {
-    const handleScroll = debounce(this.checkScrollPosition, 300)
-    window.addEventListener('scroll', handleScroll)
-  },
   methods: {
-    checkScrollPosition() {
-      if (window.scrollY === 0) {
-        this.isWindowTop = true
-      } else {
-        this.isWindowTop = false
-      }
-    },
     scrollToTop() {
       document.body.scrollTop = 0 // For Safari
       document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
@@ -288,9 +121,6 @@ export default {
 
 .top-nav {
   height: 64px;
-  &-wrap {
-    transition: all 0.2s;
-  }
 
   &__social-media-icon {
     height: 20px;
@@ -374,13 +204,6 @@ export default {
   }
 }
 
-.social-media-icon {
-  width: 28px;
-}
-
-.footer-icon {
-  width: 20px;
-}
 
 .scroll-to-top-btn {
   transition: all 0.3s !important;

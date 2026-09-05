@@ -21,7 +21,7 @@
 
     <div
       class="cover-img mb-md-21 mb-20"
-      :style="`background-image: url(${page.coverImg})`"
+      :style="`background-image: url(${page.coverImg}); ${page.coverImgSize ? `background-size: ${page.coverImgSize};` : ''}`"
     ></div>
     <div class="markdown-body">
       <div class="container mb-md-21 mb-20">
@@ -43,7 +43,7 @@
               >
                 {{ page.url }}
               </a>
-              <span v-else> {{ page.url }} </span>
+              <span v-else> - </span>
             </li>
             <li class="mb-10">
               <p class="fw-bold mb-3">My role</p>
