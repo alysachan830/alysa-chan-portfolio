@@ -51,6 +51,31 @@
         </button>
       </transition>
     </div>
+    <footer class="site-footer">
+      <div class="site-footer__inner container d-flex justify-content-between align-items-center">
+        <p class="site-footer__copy">© 2026 Alysa Chan. All rights reserved.</p>
+        <ul class="d-flex align-items-center site-footer__links">
+          <li class="me-8">
+            <a href="https://www.linkedin.com/in/alysa-chan" target="_blank" class="site-footer__icon-link">
+              <img
+                class="site-footer__icon"
+                src="images/5282542_linkedin_network_social network_linkedin logo_icon.svg"
+                alt="LinkedIn"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/alysachan830" target="_blank" class="site-footer__icon-link">
+              <img
+                class="site-footer__icon"
+                src="images/317712_code repository_github_repository_resource_icon.svg"
+                alt="GitHub"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -134,5 +159,31 @@ export default {
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
+}
+
+.site-footer {
+  padding: 20px 0;
+
+  &__inner {
+    gap: 16px;
+  }
+
+  &__copy {
+    font-size: 13px;
+    color: #707070;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+  }
+
+  &__icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon {
+    height: 20px;
+    width: 20px;
+  }
 }
 </style>
