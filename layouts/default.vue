@@ -22,7 +22,7 @@
             <a href="https://www.linkedin.com/in/alysa-chan" target="_blank">
               <img
                 class="top-nav__social-media-icon"
-                src="images/5282542_linkedin_network_social network_linkedin logo_icon.svg"
+                src="/images/5282542_linkedin_network_social network_linkedin logo_icon.svg"
                 alt="linkedIn"
               />
             </a>
@@ -31,7 +31,7 @@
             <a href="https://github.com/alysachan830" target="_blank">
               <img
                 class="top-nav__social-media-icon"
-                src="images/317712_code repository_github_repository_resource_icon.svg"
+                src="/images/317712_code repository_github_repository_resource_icon.svg"
                 alt="github"
               />
             </a>
@@ -50,7 +50,7 @@
             <a href="https://www.linkedin.com/in/alysa-chan" target="_blank" class="site-footer__icon-link">
               <img
                 class="site-footer__icon"
-                src="images/5282542_linkedin_network_social network_linkedin logo_icon.svg"
+                src="/images/5282542_linkedin_network_social network_linkedin logo_icon.svg"
                 alt="LinkedIn"
               />
             </a>
@@ -59,7 +59,7 @@
             <a href="https://github.com/alysachan830" target="_blank" class="site-footer__icon-link">
               <img
                 class="site-footer__icon"
-                src="images/317712_code repository_github_repository_resource_icon.svg"
+                src="/images/317712_code repository_github_repository_resource_icon.svg"
                 alt="GitHub"
               />
             </a>
