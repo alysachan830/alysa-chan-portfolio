@@ -41,15 +41,6 @@
     </div>
     <div>
       <Nuxt />
-      <transition name="fade">
-        <button
-          v-show="!isWindowTop"
-          class="scroll-to-top-btn position-fixed btn"
-          @click="scrollToTop"
-        >
-          <span class="text-info material-icons"> arrow_upward </span>
-        </button>
-      </transition>
     </div>
     <footer class="site-footer">
       <div class="site-footer__inner container d-flex justify-content-between align-items-center">
@@ -96,10 +87,6 @@ export default {
     handleScroll() {
       this.isWindowTop = window.scrollY === 0
     },
-    scrollToTop() {
-      document.body.scrollTop = 0 // For Safari
-      document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
-    },
   },
 }
 </script>
@@ -140,26 +127,6 @@ export default {
   }
 }
 
-
-.scroll-to-top-btn {
-  transition: all 0.3s !important;
-  bottom: 25px;
-  right: 25px;
-  background-color: #f2f2f2 !important;
-
-  &:hover {
-    box-shadow: 2px 4px 10px rgba(184, 184, 184, 0.2);
-    transform: translateY(-4px);
-  }
-}
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.2s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
-}
 
 .site-footer {
   padding: 20px 0;
