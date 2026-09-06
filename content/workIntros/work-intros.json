@@ -4,7 +4,7 @@
       "title": "Moovup Recruitment Services site",
       "year": 2025,
       "technologies": ["Web development"],
-      "imageUrl": "/images/moovup-site-cover.png",
+      "imageUrl": "/images/moovup-site-cover.webp",
       "sourceCode": null,
       "url": "https://moovup.com/hk/employer/recruitment-services/",
       "path": "moovup-recruitment-services"
@@ -13,7 +13,7 @@
       "title": "Moovup Job Fair Website",
       "year": 2022,
       "technologies": ["Web development"],
-      "imageUrl": "/images/moovup-job-fair-homepage.png",
+      "imageUrl": "/images/moovup-job-fair-homepage.webp",
       "sourceCode": null,
       "url": null,
       "path": "moovup-job-fair"
@@ -22,7 +22,7 @@
       "title": "Marugo Class Web App & LINE Chatbot",
       "year": 2021,
       "technologies": ["Vue.js", "Express.js", "Redis", "Bootstrap 5", "(Web development and web design)"],
-      "imageUrl": "/images/work-intro_marugo-mock-up.jpg",
+      "imageUrl": "/images/work-intro_marugo-mock-up.webp",
       "sourceCode": null,
       "url": null,
       "path": "marugo-class"
@@ -31,7 +31,7 @@
       "title": "Flash Ticketing",
       "year": 2021,
       "technologies": ["Nuxt.js", "Bootstrap 5", "(Web development and web design)"],
-      "imageUrl": "/images/work-intro_flash_ticketing_mock_up.jpg",
+      "imageUrl": "/images/work-intro_flash_ticketing_mock_up.webp",
       "sourceCode": "https://github.com/alysachan830/flash-ticketing",
       "url": "https://flash-ticketing.vercel.app/",
       "path": "flash-ticketing"
@@ -40,7 +40,7 @@
       "title": "Deluxury HK Web Design",
       "year": 2020,
       "technologies": ["Web design"],
-      "imageUrl": "/images/work-intro_deluxury_cover.jpg",
+      "imageUrl": "/images/work-intro_deluxury_cover.webp",
       "sourceCode": null,
       "url": null,
       "path": "deluxury"

@@ -1,7 +1,7 @@
 ---
 title: Moovup Job Fair Website
 year: 2022
-coverImg: /images/moovup-job-fair-homepage.png
+coverImg: /images/moovup-job-fair-homepage.webp
 url: null
 role: Front-end web development
 technologies: Web development

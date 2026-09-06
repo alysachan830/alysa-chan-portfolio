@@ -1,7 +1,7 @@
 ---
 title: Moovup recruitment services site
 year: 2025
-coverImg: /images/moovup-site-cover.png
+coverImg: /images/moovup-site-cover.webp
 url: https://moovup.com/hk/employer/recruitment-services/
 role: Front-end web development
 technologies: Web development

@@ -1,7 +1,7 @@
 ---
 title: Deluxury HK Web Design
 year: 2020
-coverImg: /images/deluxury_cover.jpg
+coverImg: /images/deluxury_cover.webp
 url: null
 role: Web design
 technologies: Adobe Illustrator, Adobe Photoshop
@@ -26,11 +26,11 @@ description: Website design for Deluxury HK's e-commerce website. As a designer 
 </section>
 
 <section class="mb-20">
-    <img src="/images/deluxury_homepage.jpg">
+    <img src="/images/deluxury_homepage.webp">
 </section>
 
 <section class="mb-20">
-    <img src="/images/deluxury_all_products.jpg">
+    <img src="/images/deluxury_all_products.webp">
 </section>
 
 <section>
@@ -38,9 +38,9 @@ description: Website design for Deluxury HK's e-commerce website. As a designer 
 ## Responsive version
 
 <image-wrap :images="[
-{url: '/images/mobile_deluxury_hompage.jpg'}, 
-{url: '/images/mobile_deluxury_all_products.jpg'},
-{url: '/images/mobile_deluxury_product_page.jpg'}
+{url: '/images/mobile_deluxury_hompage.webp'}, 
+{url: '/images/mobile_deluxury_all_products.webp'},
+{url: '/images/mobile_deluxury_product_page.webp'}
 ]" :is-responsive="false">
 </image-wrap>
 

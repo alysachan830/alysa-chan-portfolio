@@ -1,7 +1,7 @@
 ---
 title: Marugo Class Web App & LINE Chatbot
 year: 2021
-coverImg: /images/marugo-mock-up.jpg
+coverImg: /images/marugo-mock-up.webp
 url: Work in progress
 role: Front-end development, Planning SQL database on ER digram and writing API doc for back-end developer, UI/UX design
 technologies: Vue.js, Express.js, Redis, Adobe XD
@@ -29,12 +29,12 @@ Marugo Class LINE Chatbot focuses on few core features that helps students to ma
 
 <section class="mb-20">
     <span class="caption">LINE chatbot features</span>
-    <img src="/images/show_next_lesson_and_reminder.jpg">
+    <img src="/images/show_next_lesson_and_reminder.webp">
 </section>
 
 <section>
     <div class="caption">Connect with Web App through LIFF browser</div>
-    <img src="/images/show_liff.jpg">
+    <img src="/images/show_liff.webp">
 </section>
 
 <section class="mb-20">
@@ -73,8 +73,8 @@ Compared to chatbot, Marugo Class Web App provides more advance features for stu
 
 ## Common Features
 
-<image-wrap :images="[{url: '/images/teacher-my-coourses.jpg', caption: 'Review all material'}, 
-{url: '/images/teacher_schedule.jpg', caption: 'Schedule of all lessons'}]">
+<image-wrap :images="[{url: '/images/teacher-my-coourses.webp', caption: 'Review all material'}, 
+{url: '/images/teacher_schedule.webp', caption: 'Schedule of all lessons'}]">
 </image-wrap>
 
 </section>
@@ -83,12 +83,12 @@ Compared to chatbot, Marugo Class Web App provides more advance features for stu
 
 ## Features for teachers
 
-<image-wrap :images="[{url: '/images/teacher_edit_lesson.jpg', caption: 'Create, edit or delete lesson'}, 
-{url: '/images/teacher_create_course.jpg', caption: 'Create, edit or delete course'}]">
+<image-wrap :images="[{url: '/images/teacher_edit_lesson.webp', caption: 'Create, edit or delete lesson'}, 
+{url: '/images/teacher_create_course.webp', caption: 'Create, edit or delete course'}]">
 </image-wrap>
 
-<image-wrap :images="[{url: '/images/teacher_grade_assignment.jpg', caption: `Review student's assignment`}, 
-{url: '/images/teacher_all_lessons.jpg', caption: 'Review all lessons'}]">
+<image-wrap :images="[{url: '/images/teacher_grade_assignment.webp', caption: `Review student's assignment`}, 
+{url: '/images/teacher_all_lessons.webp', caption: 'Review all lessons'}]">
 </image-wrap>
 
 </section>
@@ -98,14 +98,14 @@ Compared to chatbot, Marugo Class Web App provides more advance features for stu
 ## Features for students
 
 <image-wrap :images="[
-{url: '/images/student_submit_assignment.jpg', caption: 'Submit assignment'}, 
-{url: '/images/student_review_handout.jpg', caption: `Review lesson's handout`}
+{url: '/images/student_submit_assignment.webp', caption: 'Submit assignment'}, 
+{url: '/images/student_review_handout.webp', caption: `Review lesson's handout`}
 ]">
 </image-wrap>
 
 <image-wrap :images="[
-{url: '/images/student_reminder.jpg', caption: 'Enable or disable reminder'}, 
-{url: '/images/student_register_course.jpg', caption: 'Register course'}
+{url: '/images/student_reminder.webp', caption: 'Enable or disable reminder'}, 
+{url: '/images/student_register_course.webp', caption: 'Register course'}
 ]">
 </image-wrap>
 
@@ -116,10 +116,10 @@ Compared to chatbot, Marugo Class Web App provides more advance features for stu
 ## Responsive design
 
 <image-wrap :images="[
-{url: '/images/login_mobile.png'},
-{url: '/images/student_register_course_mobile.png'},
-{url: '/images/student_handout_mobile.png'},
-{url: '/images/student_review_handout_lightbox_mobile.png'},
+{url: '/images/login_mobile.webp'},
+{url: '/images/student_register_course_mobile.webp'},
+{url: '/images/student_handout_mobile.webp'},
+{url: '/images/student_review_handout_lightbox_mobile.webp'},
 ]" :is-responsive="false"> </image-wrap>
 
 </section>
@@ -139,10 +139,10 @@ My role
 
 <section class="mb-20">
     <span class="caption">ER diagram for Web App and LINE Chatbot</span>
-    <img src="/images/LIFF-APP---ER-diagram---0616.jpg">
+    <img src="/images/LIFF-APP---ER-diagram---0616.webp">
 </section>
 
 <section class="mb-20">
     <span class="caption">Flowchart of how to send reminder to student by pushing message on LINE chatbot</span>
-    <img src="/images/liff_flowchart.jpg">
+    <img src="/images/liff_flowchart.webp">
 </section>

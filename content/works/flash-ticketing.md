@@ -1,7 +1,7 @@
 ---
 title: Flash Ticketing
 year: 2021
-coverImg: /images/flash_ticketing_mockup.jpg
+coverImg: /images/flash_ticketing_mockup.webp
 url: https://flash-ticketing.vercel.app/
 role: Front-end development, UI/UX design
 technologies: Nuxt.js, Adobe XD
@@ -10,7 +10,7 @@ description: Flash ticketing is an online ticketing platform for art and cultura
 ---
 
 <section class="mb-20 d-flex justify-content-center">
-    <img src="/images/flash_ticketing_video.gif">
+    <img src="/images/flash_ticketing_video.webp">
 </section>
 
 <section class="mb-20">
@@ -45,14 +45,14 @@ description: Flash ticketing is an online ticketing platform for art and cultura
 ## Event details and tickets
 
 <image-wrap :images="[
-{url: '/images/flash_ticketing_event_detail.jpg'}, 
-{url: '/images/flash_ticketing_event_all_tickets.jpg'}
+{url: '/images/flash_ticketing_event_detail.webp'}, 
+{url: '/images/flash_ticketing_event_all_tickets.webp'}
 ]">
 </image-wrap>
 
 <image-wrap :images="[
-{url: '/images/flash_ticketing_purchase.jpg'}, 
-{url: '/images/flash_ticketing_form.jpg'}
+{url: '/images/flash_ticketing_purchase.webp'}, 
+{url: '/images/flash_ticketing_form.webp'}
 ]">
 </image-wrap>
 
@@ -63,9 +63,9 @@ description: Flash ticketing is an online ticketing platform for art and cultura
 ## Responsive design
 
 <image-wrap :images="[
-{url: '/images/mobile_flash_ticketing_homepage.jpg'}, 
-{url: '/images/mobile_flash_ticketing_event_detail.jpg'}, 
-{url: '/images/mobile_flash_ticketing_purchase.png'}
+{url: '/images/mobile_flash_ticketing_homepage.webp'}, 
+{url: '/images/mobile_flash_ticketing_event_detail.webp'}, 
+{url: '/images/mobile_flash_ticketing_purchase.webp'}
 ]" :is-responsive="false">
 </image-wrap>
 
@@ -76,8 +76,8 @@ description: Flash ticketing is an online ticketing platform for art and cultura
 ## Admin dashboard
 
 <image-wrap :images="[
-{url: '/images/flash_ticketing_dashboard_show_event.jpg'}, 
-{url: '/images/flash_ticketing_dashboard_edit_event.jpg'}
+{url: '/images/flash_ticketing_dashboard_show_event.webp'}, 
+{url: '/images/flash_ticketing_dashboard_edit_event.webp'}
 ]">
 </image-wrap>
 
@@ -243,7 +243,7 @@ After a user adds a ticket:
 
 </section>
 
-<img src="/images/flash_ticketing-add_ticket.png" class="w-lg-50 mb-18">
+<img src="/images/flash_ticketing-add_ticket.webp" class="w-lg-50 mb-18">
 
 <span class="text-primary">
 
