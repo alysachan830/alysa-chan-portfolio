@@ -23,7 +23,6 @@
                 :to="work.path ? `/works/${work.path}` : undefined"
                 class="mb-14"
               >
-                <span class="mb-3 d-block"> {{ work.year }} </span>
                 <span class="mb-1 d-block font-l fw-medium">{{
                   work.title
                 }}</span>
@@ -36,6 +35,7 @@
                     {{ skill }}
                   </li>
                 </ul>
+                <span class="mt-1 d-block text-info"> {{ work.year }} </span>
               </component>
             </div>
           </li>
