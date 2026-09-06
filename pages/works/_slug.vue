@@ -19,9 +19,6 @@
       <div class="container mb-md-21 mb-20">
         <div class="row justify-content-between mb-20 mb-md-0">
           <div class="col-md-7 mb-18 mb-md-0">
-            <h2 class="fw-bold font-l mb-8">
-              {{ page.title }}
-            </h2>
             <p>{{ page.description }}</p>
             <p v-if="page.performanceUrl" class="mt-8">
               演出連結：<a
