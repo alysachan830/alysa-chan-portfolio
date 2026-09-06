@@ -3,7 +3,7 @@
     <div class="container mb-13">
       <div class="row justify-content-between flex-column-reverse flex-md-row">
         <div class="col-md-8">
-          <h2 class="font-md-2xl font-xl">{{ page.title }}</h2>
+          <h2 class="font-md-2xl font-xl work-title">{{ page.title }}</h2>
         </div>
       </div>
     </div>
@@ -124,10 +124,26 @@ export default {
 <style lang="scss">
 @import '@/assets/stylesheets/markdown-content/markdown-content';
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.work-title {
+  opacity: 0;
+  animation: fadeIn 0.4s ease forwards;
+}
+
 .cover-img {
   width: 100%;
   height: auto;
   display: block;
+  opacity: 0;
+  animation: fadeIn 0.4s ease 0.1s forwards;
 }
 
 .icon {
