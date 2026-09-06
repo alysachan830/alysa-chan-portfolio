@@ -37,35 +37,6 @@
                   </li>
                 </ul>
               </component>
-              <NuxtLink
-                v-if="work.path"
-                :to="`/works/${work.path}`"
-                class="work__read-more mb-lg-12 mb-8 font-s"
-              >
-                Read more
-                <span class="material-icons align-middle"> chevron_right </span>
-              </NuxtLink>
-              <div class="d-flex">
-                <a
-                  v-if="work.sourceCode"
-                  :href="work.sourceCode"
-                  class="me-8"
-                  target="_blank"
-                >
-                  <img
-                    class="icon"
-                    src="images/317712_code repository_github_repository_resource_icon.svg"
-                    alt="github"
-                  />
-                </a>
-                <a v-if="work.url" :href="work.url" target="_blank">
-                  <img
-                    class="icon"
-                    src="images/2561457_link_icon.svg"
-                    alt="link"
-                  />
-                </a>
-              </div>
             </div>
           </li>
         </ul>
@@ -97,19 +68,4 @@ export default {
   margin-top: 60px;
 }
 
-.icon {
-  width: 22px;
-  height: 22px;
-}
-
-.work {
-  &__read-more {
-    transition: transform 0.4s;
-  }
-  &:hover {
-    .work__read-more {
-      transform: translateX(8px);
-    }
-  }
-}
 </style>
