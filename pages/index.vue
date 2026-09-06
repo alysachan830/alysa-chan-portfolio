@@ -7,7 +7,6 @@
             v-for="(work, index) in workIntros"
             :key="work.title"
             class="row justify-content-between work-item"
-            :style="{ animationDelay: `${index * 0.15}s` }"
           >
             <component
               :is="work.path ? 'NuxtLink' : 'div'"
@@ -69,20 +68,7 @@ export default {
   margin-top: 60px;
 }
 
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(32px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 .work-item {
-  opacity: 0;
-  animation: slideUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   margin-bottom: 77px;
 }
 

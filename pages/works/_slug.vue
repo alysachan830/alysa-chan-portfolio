@@ -124,26 +124,10 @@ export default {
 <style lang="scss">
 @import '@/assets/stylesheets/markdown-content/markdown-content';
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.work-title {
-  opacity: 0;
-  animation: fadeIn 0.4s ease forwards;
-}
-
 .cover-img {
   width: 100%;
   height: auto;
   display: block;
-  opacity: 0;
-  animation: fadeIn 0.4s ease 0.1s forwards;
 }
 
 .icon {
