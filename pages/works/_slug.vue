@@ -90,8 +90,8 @@
     </div>
     <div class="container mb-18">
       <a
-        class="back-to-works-btn text-info mb-8 mb-md-0 text-end"
-        href="/#works"
+        class="back-to-works-btn text-info mb-8 mb-md-0 text-start"
+        href="/"
         >Back to works
         <span class="material-icons align-middle"> chevron_right </span>
       </a>
