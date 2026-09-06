@@ -3,7 +3,7 @@
     {
       "title": "擬家聊天室 SHALL WE, FAMILY?",
       "year": 2026,
-      "technologies": ["Web-app development", "Realtime video tech"],
+      "technologies": ["Web-app development (full-stack)", "Realtime video call tech", "Face-tracking 3D avatar tech"],
       "imageUrl": "/images/ikea-cover-image.webp",
       "sourceCode": null,
       "url": "https://www.youtube.com/watch?v=EZsSb88luWw",
@@ -30,7 +30,7 @@
     {
       "title": "Marugo Class Web App & LINE Chatbot",
       "year": 2021,
-      "technologies": ["Vue.js", "Express.js", "Redis", "Bootstrap 5", "(Web development and web design)"],
+      "technologies": ["Web development", "UI/UX design"],
       "imageUrl": "/images/work-intro_marugo-mock-up.webp",
       "sourceCode": null,
       "url": null,
@@ -39,7 +39,7 @@
     {
       "title": "Flash Ticketing",
       "year": 2021,
-      "technologies": ["Nuxt.js", "Bootstrap 5", "(Web development and web design)"],
+      "technologies": ["Web development", "UI/UX design"],
       "imageUrl": "/images/work-intro_flash_ticketing_mock_up.webp",
       "sourceCode": "https://github.com/alysachan830/flash-ticketing",
       "url": "https://flash-ticketing.vercel.app/",
