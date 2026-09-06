@@ -6,7 +6,7 @@
           <li
             v-for="(work, index) in workIntros"
             :key="work.title"
-            class="row justify-content-between mb-20 work-item"
+            class="row justify-content-between work-item"
             :style="{ animationDelay: `${index * 0.15}s` }"
           >
             <component
@@ -83,6 +83,7 @@ export default {
 .work-item {
   opacity: 0;
   animation: slideUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  margin-bottom: 77px;
 }
 
 </style>
