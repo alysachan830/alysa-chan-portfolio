@@ -1,6 +1,6 @@
 <template>
-  <div class="mt-20 mt-lg-21">
-    <div class="container mb-16">
+  <div class="mt-16 mt-lg-18">
+    <div class="container mb-13">
       <div class="row justify-content-between flex-column-reverse flex-md-row">
         <div class="col-md-8">
           <span class="font-m"> {{ page.year }} </span>
@@ -19,10 +19,13 @@
       </div>
     </div>
 
-    <div
-      class="cover-img mb-md-21 mb-20"
-      :style="`background-image: url(${page.coverImg}); ${page.coverImgSize ? `background-size: ${page.coverImgSize};` : ''}`"
-    ></div>
+    <div class="container">
+      <img
+        class="cover-img mb-md-21 mb-20"
+        :src="page.coverImg"
+        :alt="page.title"
+      />
+    </div>
     <div class="markdown-body">
       <div class="container mb-md-21 mb-20">
         <div class="row justify-content-between mb-20 mb-md-0">
@@ -134,23 +137,8 @@ export default {
 
 .cover-img {
   width: 100%;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  height: 240px;
-
-  @include media-breakpoint-up(md) {
-    height: 532px;
-  }
-
-  @include media-breakpoint-up(lg) {
-    height: 665px;
-  }
-
-  @include media-breakpoint-up(xxl) {
-    height: 1280px;
-  }
+  height: auto;
+  display: block;
 }
 
 .icon {

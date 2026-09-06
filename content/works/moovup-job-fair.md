@@ -6,6 +6,6 @@ url: null
 role: Front-end web development
 technologies: Web development
 sourceCode: null
-coverImgSize: cover
+coverImgSize: contain
 description: Moovup Job Fair website that shows the job fair details, to let users register and join the job fair.
 ---
