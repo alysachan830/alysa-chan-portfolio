@@ -31,6 +31,11 @@ description: An online-only, experimental theatre project where the audience dir
   <img src="/images/ikea-screenshot.webp" alt="擬家聊天室 SHALL WE, FAMILY? Screenshot">
 </section>
 
+<section class="mb-20 d-flex gap-3 flex-wrap">
+  <img src="/images/screenrecord-youtube-green-640p.gif" alt="擬家聊天室 SHALL WE, FAMILY? Screen Recording" class="screenrecord-gif">
+  <img src="/images/screenrecord-youtube-all-4ppl-640p.gif" alt="擬家聊天室 SHALL WE, FAMILY? Screen Recording" class="screenrecord-gif">
+</section>
+
 <section class="mb-20 d-flex justify-content-center">
   <img src="/images/ikea-poster.webp" alt="擬家聊天室 SHALL WE, FAMILY? Poster">
 </section>

@@ -28,6 +28,11 @@
     width: 100%;
   }
 
+  .screenrecord-gif {
+    min-width: 0;
+    flex: 1 1 200px;
+  }
+
   p,
   ul {
     margin-bottom: 20px;
