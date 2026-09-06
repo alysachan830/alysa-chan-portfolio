@@ -6,16 +6,6 @@
           <span class="font-m"> {{ page.year }} </span>
           <h2 class="font-md-2xl font-xl">{{ page.title }}</h2>
         </div>
-        <div class="col-md-4">
-          <a
-            class="back-to-works-btn text-info text-end mb-8 mb-md-0 font-s"
-            href="/#works"
-            >Back to works
-            <span class="material-icons align-middle font-s">
-              chevron_right
-            </span>
-          </a>
-        </div>
       </div>
     </div>
 
