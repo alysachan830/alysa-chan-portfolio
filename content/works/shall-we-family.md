@@ -4,8 +4,8 @@ year: 2026
 coverImg: /images/ikea-banner.webp
 coverImgSize: contain
 url: https://www.youtube.com/watch?v=EZsSb88luWw
-role: Web development
-technologies: Web-app development, Realtime video tech
+role: Web-app development (full-stack), UI/UX design
+technologies: Realtime video call tech, Face-tracking 3D avatar tech, Backend infrastructure
 sourceCode: null
 performanceUrl: https://www.art-mate.net/doc/93934
 description: An online-only, experimental theatre project where the audience directly participates in a script-reading session. You will be given an identity and a virtual avatar to engage in a 30-minute conversation with other participants. What does "home" mean to you? What kind of home do you long for? We sincerely invite you to participate and share your feelings and imaginations of "home."

@@ -3,7 +3,6 @@
     <div class="container mb-13">
       <div class="row justify-content-between flex-column-reverse flex-md-row">
         <div class="col-md-8">
-          <span class="font-m"> {{ page.year }} </span>
           <h2 class="font-md-2xl font-xl">{{ page.title }}</h2>
         </div>
       </div>
