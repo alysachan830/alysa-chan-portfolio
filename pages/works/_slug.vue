@@ -31,6 +31,13 @@
               {{ page.title }}
             </h2>
             <p>{{ page.description }}</p>
+            <p v-if="page.performanceUrl" class="mt-8">
+              演出連結：<a
+                :href="page.performanceUrl"
+                target="_blank"
+                class="hover--primary"
+              >{{ page.performanceUrl }}</a>
+            </p>
           </div>
           <ul class="col-md-4">
             <li class="mb-10">

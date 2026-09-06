@@ -1,6 +1,15 @@
 {
   "workIntros": [
     {
+      "title": "擬家聊天室 SHALL WE, FAMILY?",
+      "year": 2026,
+      "technologies": ["Web-app development", "Realtime video tech"],
+      "imageUrl": "/images/ikea-cover-image.webp",
+      "sourceCode": null,
+      "url": "https://www.youtube.com/watch?v=EZsSb88luWw",
+      "path": "shall-we-family"
+    },
+    {
       "title": "Moovup Recruitment Services site",
       "year": 2025,
       "technologies": ["Web development"],
