@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="top-nav-wrap">
+    <div class="top-nav-wrap" :class="{ 'top-nav-wrap--scrolled': !isWindowTop }">
       <nav
         class="
           top-nav
@@ -56,7 +56,21 @@
 
 <script>
 export default {
+  data() {
+    return {
+      isWindowTop: true,
+    }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.handleScroll)
+  },
   methods: {
+    handleScroll() {
+      this.isWindowTop = window.scrollY === 0
+    },
     scrollToTop() {
       document.body.scrollTop = 0 // For Safari
       document.documentElement.scrollTop = 0 // For Chrome, Firefox, IE and Opera
@@ -67,6 +81,20 @@ export default {
 
 <style lang="scss">
 @import '@/assets/stylesheets/all';
+
+.top-nav-wrap {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease, box-shadow 0.3s ease;
+
+  &--scrolled {
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  }
+}
 
 .top-nav {
   height: 64px;
