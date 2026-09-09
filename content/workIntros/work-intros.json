@@ -10,6 +10,15 @@
       "path": "shall-we-family"
     },
     {
+      "title": "Aniface Open-source library",
+      "year": 2026,
+      "technologies": ["Face-tracking 3D avatar tech"],
+      "imageUrl": "/images/aniface-cover-img.gif",
+      "sourceCode": "https://github.com/alysachan830/aniface",
+      "url": "https://alysachan830.github.io/aniface/",
+      "path": "aniface"
+    },
+    {
       "title": "Moovup Recruitment Services site",
       "year": 2025,
       "technologies": ["Web development"],
